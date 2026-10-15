@@ -27,7 +27,11 @@
   <header class="site-header">
     <div class="wrap header-inner">
       <a class="brand" href="index.html">
-        <img src="images/logo-mark.jpg" width="250" height="250" alt="">
+        <picture>
+          <source type="image/avif" srcset="images/opt/logo-mark-128.avif">
+          <source type="image/webp" srcset="images/opt/logo-mark-128.webp">
+          <img src="images/opt/logo-mark-128.jpg" width="128" height="128" alt="">
+        </picture>
         <span class="brand-name">Sherman's Shih Tzu Puppies<span class="brand-place">Niota, Tennessee</span></span>
       </a>
       <a class="call header-call" href="tel:+14239203750">Call 423-920-3750</a>
@@ -54,12 +58,30 @@
     </section>
     <section class="section">
       <div class="wrap">
-        <h2>Shermans Shih Tzu Puppies Videos</h2>
+        <h2>Sherman's Shih Tzu Puppies Videos</h2>
         <p>Call now and see about setting an appointment up to view puppies in person.</p>
         <div class="video-grid">
-          <iframe title="Sherman's Shih Tzu Puppies gallery video 1" src="https://player.vimeo.com/video/800305059?h=a49f996da1&amp;title=0&amp;byline=0&amp;portrait=0" loading="lazy" allow="fullscreen" allowfullscreen></iframe>
-          <iframe title="Sherman's Shih Tzu Puppies gallery video 2" src="https://player.vimeo.com/video/800306507?h=0f3f0e075b&amp;title=0&amp;byline=0&amp;portrait=0" loading="lazy" allow="fullscreen" allowfullscreen></iframe>
-          <iframe title="Sherman's Shih Tzu Puppies gallery video 3" src="https://player.vimeo.com/video/800308136?h=b95965b6e2&amp;title=0&amp;byline=0&amp;portrait=0" loading="lazy" allow="fullscreen" allowfullscreen></iframe>
+          <button class="video-play" type="button" data-title="Sherman's Shih Tzu Puppies gallery video 1" data-src="https://player.vimeo.com/video/800305059?h=a49f996da1&amp;title=0&amp;byline=0&amp;portrait=0" aria-label="Play Sherman's Shih Tzu Puppies gallery video 1">
+            <picture>
+              <source type="image/webp" srcset="images/posters/gallery-1.webp">
+              <img src="images/posters/gallery-1.jpg" width="800" height="1423" alt="" loading="lazy">
+            </picture>
+            <span class="play-icon" aria-hidden="true"></span>
+          </button>
+          <button class="video-play" type="button" data-title="Sherman's Shih Tzu Puppies gallery video 2" data-src="https://player.vimeo.com/video/800306507?h=0f3f0e075b&amp;title=0&amp;byline=0&amp;portrait=0" aria-label="Play Sherman's Shih Tzu Puppies gallery video 2">
+            <picture>
+              <source type="image/webp" srcset="images/posters/gallery-2.webp">
+              <img src="images/posters/gallery-2.jpg" width="800" height="1423" alt="" loading="lazy">
+            </picture>
+            <span class="play-icon" aria-hidden="true"></span>
+          </button>
+          <button class="video-play" type="button" data-title="Sherman's Shih Tzu Puppies gallery video 3" data-src="https://player.vimeo.com/video/800308136?h=b95965b6e2&amp;title=0&amp;byline=0&amp;portrait=0" aria-label="Play Sherman's Shih Tzu Puppies gallery video 3">
+            <picture>
+              <source type="image/webp" srcset="images/posters/gallery-3.webp">
+              <img src="images/posters/gallery-3.jpg" width="800" height="1423" alt="" loading="lazy">
+            </picture>
+            <span class="play-icon" aria-hidden="true"></span>
+          </button>
         </div>
       </div>
     </section>
@@ -68,59 +90,105 @@
         <h2>Photos</h2>
         <p>Check out this adorable Shih Tzu puppy! Pure black Shih Tzu's are harder to find. Captions are the names on the original photo files.</p>
         <div class="photo-grid">
-          <button class="shot" type="button">
-            <img src="images/adorable-shih-tzu-puppies.jpg" width="1600" height="1200" alt="Adorable Shih Tzu Puppies" loading="lazy">
+          <button class="shot" type="button" data-full="images/adorable-shih-tzu-puppies.jpg">
+            <picture>
+              <source type="image/avif" srcset="images/opt/adorable-shih-tzu-puppies-480.avif 480w, images/opt/adorable-shih-tzu-puppies-800.avif 800w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)">
+              <source type="image/webp" srcset="images/opt/adorable-shih-tzu-puppies-480.webp 480w, images/opt/adorable-shih-tzu-puppies-800.webp 800w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)">
+              <img src="images/opt/adorable-shih-tzu-puppies-800.jpg" srcset="images/opt/adorable-shih-tzu-puppies-480.jpg 480w, images/opt/adorable-shih-tzu-puppies-800.jpg 800w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)" width="1600" height="1200" alt="Adorable Shih Tzu Puppies" loading="lazy">
+            </picture>
             <span>Adorable Shih Tzu Puppies</span>
           </button>
-          <button class="shot" type="button">
-            <img src="images/black-female-akc.jpg" width="980" height="1306" alt="Black Female AKC" loading="lazy">
+          <button class="shot" type="button" data-full="images/black-female-akc.jpg">
+            <picture>
+              <source type="image/avif" srcset="images/opt/black-female-akc-480.avif 480w, images/opt/black-female-akc-800.avif 800w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)">
+              <img src="images/opt/black-female-akc-800.jpg" srcset="images/opt/black-female-akc-480.jpg 480w, images/opt/black-female-akc-800.jpg 800w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)" width="980" height="1306" alt="Black Female AKC" loading="lazy">
+            </picture>
             <span>Black Female AKC</span>
           </button>
-          <button class="shot" type="button">
-            <img src="images/black-female-akc-wide.jpg" width="1200" height="900" alt="Black Female AKC, wide" loading="lazy">
+          <button class="shot" type="button" data-full="images/black-female-akc-wide.jpg">
+            <picture>
+              <source type="image/avif" srcset="images/opt/black-female-akc-wide-480.avif 480w, images/opt/black-female-akc-wide-800.avif 800w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)">
+              <img src="images/opt/black-female-akc-wide-800.jpg" srcset="images/opt/black-female-akc-wide-480.jpg 480w, images/opt/black-female-akc-wide-800.jpg 800w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)" width="1200" height="900" alt="Black Female AKC, wide" loading="lazy">
+            </picture>
             <span>Black Female AKC, wide</span>
           </button>
-          <button class="shot" type="button">
-            <img src="images/black-male-akc.jpg" width="300" height="225" alt="Black Male AKC Shih Tzu Puppy" loading="lazy">
+          <button class="shot" type="button" data-full="images/black-male-akc.jpg">
+            <picture>
+              <source type="image/avif" srcset="images/opt/black-male-akc-300.avif">
+              <source type="image/webp" srcset="images/opt/black-male-akc-300.webp">
+              <img src="images/black-male-akc.jpg" width="300" height="225" alt="Black Male AKC Shih Tzu Puppy" loading="lazy">
+            </picture>
             <span>Black Male AKC Shih Tzu Puppy</span>
           </button>
-          <button class="shot" type="button">
-            <img src="images/jasmine-male-shih-tzu.jpg" width="384" height="512" alt="Jasmine Male Shih Tzu" loading="lazy">
+          <button class="shot" type="button" data-full="images/jasmine-male-shih-tzu.jpg">
+            <picture>
+              <source type="image/avif" srcset="images/opt/jasmine-male-shih-tzu-384.avif">
+              <source type="image/webp" srcset="images/opt/jasmine-male-shih-tzu-384.webp">
+              <img src="images/jasmine-male-shih-tzu.jpg" width="384" height="512" alt="Jasmine Male Shih Tzu" loading="lazy">
+            </picture>
             <span>Jasmine Male Shih Tzu</span>
           </button>
-          <button class="shot" type="button">
-            <img src="images/shih-tzu-puppies-for-sale.jpg" width="768" height="1024" alt="Shih Tzu Puppies For Sale" loading="lazy">
+          <button class="shot" type="button" data-full="images/shih-tzu-puppies-for-sale.jpg">
+            <picture>
+              <source type="image/avif" srcset="images/opt/shih-tzu-puppies-for-sale-480.avif 480w, images/opt/shih-tzu-puppies-for-sale-768.avif 768w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)">
+              <source type="image/webp" srcset="images/opt/shih-tzu-puppies-for-sale-480.webp 480w, images/opt/shih-tzu-puppies-for-sale-768.webp 768w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)">
+              <img src="images/opt/shih-tzu-puppies-for-sale-768.jpg" srcset="images/opt/shih-tzu-puppies-for-sale-480.jpg 480w, images/opt/shih-tzu-puppies-for-sale-768.jpg 768w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)" width="768" height="1024" alt="Shih Tzu Puppies For Sale" loading="lazy">
+            </picture>
             <span>Shih Tzu Puppies For Sale</span>
           </button>
-          <button class="shot" type="button">
-            <img src="images/spring-time-shih-tzu-puppy.jpg" width="980" height="735" alt="Spring Time Shih Tzu Puppy" loading="lazy">
+          <button class="shot" type="button" data-full="images/spring-time-shih-tzu-puppy.jpg">
+            <picture>
+              <source type="image/avif" srcset="images/opt/spring-time-shih-tzu-puppy-480.avif 480w, images/opt/spring-time-shih-tzu-puppy-800.avif 800w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)">
+              <source type="image/webp" srcset="images/opt/spring-time-shih-tzu-puppy-480.webp 480w, images/opt/spring-time-shih-tzu-puppy-800.webp 800w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)">
+              <img src="images/opt/spring-time-shih-tzu-puppy-800.jpg" srcset="images/opt/spring-time-shih-tzu-puppy-480.jpg 480w, images/opt/spring-time-shih-tzu-puppy-800.jpg 800w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)" width="980" height="735" alt="Spring Time Shih Tzu Puppy" loading="lazy">
+            </picture>
             <span>Spring Time Shih Tzu Puppy</span>
           </button>
-          <button class="shot" type="button">
-            <img src="images/teacup-shih-tzu-puppy.jpg" width="1400" height="1050" alt="Teacup Shih Tzu Puppy" loading="lazy">
+          <button class="shot" type="button" data-full="images/teacup-shih-tzu-puppy.jpg">
+            <picture>
+              <source type="image/avif" srcset="images/opt/teacup-shih-tzu-puppy-480.avif 480w, images/opt/teacup-shih-tzu-puppy-800.avif 800w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)">
+              <source type="image/webp" srcset="images/opt/teacup-shih-tzu-puppy-480.webp 480w, images/opt/teacup-shih-tzu-puppy-800.webp 800w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)">
+              <img src="images/opt/teacup-shih-tzu-puppy-800.jpg" srcset="images/opt/teacup-shih-tzu-puppy-480.jpg 480w, images/opt/teacup-shih-tzu-puppy-800.jpg 800w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)" width="1400" height="1050" alt="Teacup Shih Tzu Puppy" loading="lazy">
+            </picture>
             <span>Teacup Shih Tzu Puppy</span>
           </button>
-          <button class="shot" type="button">
-            <img src="images/tri-color-female-akc-limited.jpg" width="980" height="735" alt="Tri Color Female AKC Limited" loading="lazy">
+          <button class="shot" type="button" data-full="images/tri-color-female-akc-limited.jpg">
+            <picture>
+              <source type="image/avif" srcset="images/opt/tri-color-female-akc-limited-480.avif 480w, images/opt/tri-color-female-akc-limited-800.avif 800w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)">
+              <source type="image/webp" srcset="images/opt/tri-color-female-akc-limited-480.webp 480w, images/opt/tri-color-female-akc-limited-800.webp 800w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)">
+              <img src="images/opt/tri-color-female-akc-limited-800.jpg" srcset="images/opt/tri-color-female-akc-limited-480.jpg 480w, images/opt/tri-color-female-akc-limited-800.jpg 800w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)" width="980" height="735" alt="Tri Color Female AKC Limited" loading="lazy">
+            </picture>
             <span>Tri Color Female AKC Limited</span>
           </button>
-          <button class="shot" type="button">
-            <img src="images/tri-color-female-akc-limited-1.jpg" width="980" height="735" alt="Tri Color Female AKC Limited 1" loading="lazy">
+          <button class="shot" type="button" data-full="images/tri-color-female-akc-limited-1.jpg">
+            <picture>
+              <source type="image/avif" srcset="images/opt/tri-color-female-akc-limited-1-480.avif 480w, images/opt/tri-color-female-akc-limited-1-800.avif 800w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)">
+              <source type="image/webp" srcset="images/opt/tri-color-female-akc-limited-1-480.webp 480w, images/opt/tri-color-female-akc-limited-1-800.webp 800w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)">
+              <img src="images/opt/tri-color-female-akc-limited-1-800.jpg" srcset="images/opt/tri-color-female-akc-limited-1-480.jpg 480w, images/opt/tri-color-female-akc-limited-1-800.jpg 800w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)" width="980" height="735" alt="Tri Color Female AKC Limited 1" loading="lazy">
+            </picture>
             <span>Tri Color Female AKC Limited 1</span>
           </button>
-          <button class="shot" type="button">
-            <img src="images/zoey-shih-tzu-puppy.jpg" width="980" height="735" alt="Zoey Shih Tzu Puppy" loading="lazy">
+          <button class="shot" type="button" data-full="images/zoey-shih-tzu-puppy.jpg">
+            <picture>
+              <source type="image/avif" srcset="images/opt/zoey-shih-tzu-puppy-480.avif 480w, images/opt/zoey-shih-tzu-puppy-800.avif 800w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)">
+              <source type="image/webp" srcset="images/opt/zoey-shih-tzu-puppy-480.webp 480w, images/opt/zoey-shih-tzu-puppy-800.webp 800w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)">
+              <img src="images/opt/zoey-shih-tzu-puppy-800.jpg" srcset="images/opt/zoey-shih-tzu-puppy-480.jpg 480w, images/opt/zoey-shih-tzu-puppy-800.jpg 800w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)" width="980" height="735" alt="Zoey Shih Tzu Puppy" loading="lazy">
+            </picture>
             <span>Zoey Shih Tzu Puppy</span>
           </button>
-          <button class="shot" type="button">
-            <img src="images/zoey-shih-tzu-puppy-1.jpg" width="980" height="735" alt="Zoey Shih Tzu Puppy 1" loading="lazy">
+          <button class="shot" type="button" data-full="images/zoey-shih-tzu-puppy-1.jpg">
+            <picture>
+              <source type="image/avif" srcset="images/opt/zoey-shih-tzu-puppy-1-480.avif 480w, images/opt/zoey-shih-tzu-puppy-1-800.avif 800w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)">
+              <source type="image/webp" srcset="images/opt/zoey-shih-tzu-puppy-1-480.webp 480w, images/opt/zoey-shih-tzu-puppy-1-800.webp 800w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)">
+              <img src="images/opt/zoey-shih-tzu-puppy-1-800.jpg" srcset="images/opt/zoey-shih-tzu-puppy-1-480.jpg 480w, images/opt/zoey-shih-tzu-puppy-1-800.jpg 800w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)" width="980" height="735" alt="Zoey Shih Tzu Puppy 1" loading="lazy">
+            </picture>
             <span>Zoey Shih Tzu Puppy 1</span>
           </button>
         </div>
         <h2>Follow us on social media</h2>
         <p>We are now on TikTok.</p>
         <ul class="plain">
-          <li><a href="https://www.facebook.com/1624374421113273">Facebook</a></li>
+          <li><a href="https://www.facebook.com/ShermanShihTzuPuppies/">Facebook</a></li>
           <li><a href="https://www.instagram.com/shermans_shihtzu_puppies/">Instagram</a></li>
           <li><a href="https://www.tiktok.com/@shermansshihtzupuppies">TikTok</a></li>
           <li><a href="https://www.yelp.com/biz/shermans-shih-tzu-puppies-niota-2">Yelp</a></li>
@@ -152,7 +220,7 @@
       <div>
         <h2>Connect</h2>
         <ul>
-          <li><a href="https://www.facebook.com/1624374421113273">Facebook</a></li>
+          <li><a href="https://www.facebook.com/ShermanShihTzuPuppies/">Facebook</a></li>
           <li><a href="https://www.instagram.com/shermans_shihtzu_puppies/">Instagram</a></li>
           <li><a href="https://www.tiktok.com/@shermansshihtzupuppies">TikTok</a></li>
           <li><a href="https://www.yelp.com/biz/shermans-shih-tzu-puppies-niota-2">Yelp</a></li>
