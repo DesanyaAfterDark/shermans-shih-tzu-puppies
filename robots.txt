@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://desanyaafterdark.github.io/shermans-shih-tzu-puppies/sitemap.xml
