@@ -69,13 +69,16 @@
       label: "Visits",
       keywords: ["visit", "visits", "appointment"],
       answer: function () {
+        var book = link(root + "book.html", "Book a visit");
+        book.className = "btn btn-primary";
         return [
-          paragraph(["Visits are by appointment in Niota, Tennessee. Call to set up a time to view puppies in person at our home."]),
+          paragraph(["Visits are by appointment in Niota, Tennessee. We'll call or text to confirm."]),
           paragraph([
-            "The address is ",
+            "Schedule an appointment for a puppy showing at our home, or begin with a free Zoom visit. The address is ",
             link(MAPS, "230 County Road 263, Niota, TN 37826", true),
-            ". You can also begin with a free Zoom visit."
-          ])
+            "."
+          ]),
+          el("p", {}, [book])
         ];
       }
     },
@@ -156,8 +159,8 @@
 
   function priceAnswer() {
     return [
-      paragraph(["Prices are not listed on this site. Call ", phone(), " and ask for Shannon Sherman, or email ", email(), "."]),
-      paragraph(["Deposits are allowed to hold a puppy, and the full amount is due at pickup."])
+      paragraph(["Visit and meet the puppies, put down a deposit to hold your puppy, then when the puppy is old enough to go home you pick up in person and pay the remaining balance."]),
+      paragraph(["We do not list amounts on this site. Call ", phone(), " and ask for Shannon Sherman, or email ", email(), "."])
     ];
   }
 
