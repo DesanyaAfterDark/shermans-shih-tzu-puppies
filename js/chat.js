@@ -74,10 +74,11 @@
         return [
           paragraph(["Visits are by appointment in Niota, Tennessee. We'll call or text to confirm."]),
           paragraph([
-            "Schedule an appointment for a puppy showing at our home, or begin with a free Zoom visit. The address is ",
+            "Schedule an appointment for a puppy showing at our home. The address is ",
             link(MAPS, "230 County Road 263, Niota, TN 37826", true),
             "."
           ]),
+          paragraph(["Prefer a video visit? Call or text ", phone(), " to set up a FaceTime visit."]),
           el("p", {}, [book])
         ];
       }
@@ -91,12 +92,12 @@
       }
     },
     {
-      id: "zoom",
-      label: "Zoom",
-      keywords: ["zoom", "online", "video call"],
+      id: "facetime",
+      label: "FaceTime",
+      keywords: ["facetime", "face time", "zoom", "online", "video call"],
       answer: function () {
         return [
-          paragraph(["Free puppy viewing appointments are available on Zoom. Call to set one up, or ask on the ", contact(), "."]),
+          paragraph(["Prefer a video visit? Call or text ", phone(), " to set up a FaceTime visit."]),
           paragraph(["Call ", phone(), " and ask for Shannon Sherman."])
         ];
       }
@@ -140,7 +141,7 @@
     var q = text.toLowerCase();
     var priced = priceWords.some(function (word) { return q.indexOf(word) !== -1; });
     if (priced) return "price";
-    if (q.indexOf("zoom") !== -1) return topicById("zoom");
+    if (q.indexOf("zoom") !== -1 || q.indexOf("facetime") !== -1 || q.indexOf("face time") !== -1) return topicById("facetime");
     if (q.indexOf("ship") !== -1 || q.indexOf("deliver") !== -1) return topicById("pickup");
     var best = null;
     var bestScore = 0;
