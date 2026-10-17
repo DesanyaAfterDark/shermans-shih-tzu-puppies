@@ -279,8 +279,62 @@
         </div>
         <p class="actions center">
           <a class="btn btn-primary" href="https://www.google.com/maps/place/?q=place_id:ChIJ___zxmtrXogRqmptiVLNFiM" target="_blank" rel="noopener noreferrer">Read our reviews on Google</a>
-          <a class="btn btn-quiet" href="https://search.google.com/local/writereview?placeid=ChIJ___zxmtrXogRqmptiVLNFiM" target="_blank" rel="noopener noreferrer">Leave a review</a>
         </p>
+      </div>
+    </section>
+
+    <section class="section" id="family-reviews">
+      <div class="wrap-narrow">
+        <p class="eyebrow center">From this site</p>
+        <h2 class="center">What families say</h2>
+        <div class="ornament" aria-hidden="true"><svg class="rose" width="30" height="30"><use href="#rose"/></svg></div>
+        <p class="center" id="approved-reviews-empty">Approved reviews from the form below will be added here.</p>
+        <!-- Add each approved review as a blockquote.review inside this list, then remove the empty note. -->
+        <div class="review-list" id="approved-reviews"></div>
+      </div>
+    </section>
+
+    <section class="section" id="leave-review">
+      <div class="wrap-narrow">
+        <p class="eyebrow center">Your turn</p>
+        <h2 class="center">Leave a review</h2>
+        <div class="ornament" aria-hidden="true"><svg class="rose" width="30" height="30"><use href="#rose"/></svg></div>
+        <p class="center">Send a review from this page. We read each one, and it is posted here only after we approve it.</p>
+        <div class="leave-grid">
+          <form class="inquiry" action="https://formsubmit.co/greenpea@live.com" method="post">
+            <input type="hidden" name="_subject" value="Review — Sherman's Shih Tzu Puppies">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="true">
+            <input type="hidden" name="_cc" value="desanyaafterdark@gmail.com">
+            <input type="hidden" name="_next" value="https://desanyaafterdark.github.io/shermans-shih-tzu-puppies/?review=thanks#leave-review">
+            <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+            <label>Name
+              <input name="name" autocomplete="name" required>
+            </label>
+            <fieldset class="stars-input">
+              <legend>Star rating</legend>
+              <div class="star-choices">
+                <label><input type="radio" name="rating" value="1" required><span>1</span><span class="visually-hidden"> star</span></label>
+                <label><input type="radio" name="rating" value="2"><span>2</span><span class="visually-hidden"> stars</span></label>
+                <label><input type="radio" name="rating" value="3"><span>3</span><span class="visually-hidden"> stars</span></label>
+                <label><input type="radio" name="rating" value="4"><span>4</span><span class="visually-hidden"> stars</span></label>
+                <label><input type="radio" name="rating" value="5"><span>5</span><span class="visually-hidden"> stars</span></label>
+              </div>
+            </fieldset>
+            <label>Review
+              <textarea name="review" rows="5" required></textarea>
+            </label>
+            <label>Email, if you want a reply
+              <input name="email" type="email" autocomplete="email">
+            </label>
+            <button class="btn btn-primary" type="submit">Send review</button>
+          </form>
+          <aside class="review-also">
+            <p>You can also post on the Google listing.</p>
+            <a class="btn btn-quiet" href="https://search.google.com/local/writereview?placeid=ChIJ___zxmtrXogRqmptiVLNFiM" target="_blank" rel="noopener noreferrer">Also leave a review on Google</a>
+          </aside>
+        </div>
+        <p id="review-thanks" class="review-thanks" role="status" tabindex="-1" hidden>Thank you. Your review was sent. It is posted on this page only after we approve it.</p>
       </div>
     </section>
 

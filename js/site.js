@@ -1,4 +1,10 @@
 (function () {
+  var thanks = document.getElementById("review-thanks");
+  if (thanks && /(?:\?|&)review=thanks(?:&|$)/.test(location.search)) {
+    thanks.hidden = false;
+    if (thanks.focus) thanks.focus();
+  }
+
   document.querySelectorAll(".video-play").forEach(function (button) {
     button.addEventListener("click", function () {
       var src = button.getAttribute("data-src");
