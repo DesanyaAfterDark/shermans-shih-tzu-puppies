@@ -1,0 +1,29 @@
+{
+  "topics": [
+    {
+      "id": "puppies",
+      "name": "Puppies",
+      "serviceHref": "../index.html#puppies",
+      "serviceLabel": "Our puppies"
+    },
+    {
+      "id": "visits",
+      "name": "Visits",
+      "serviceHref": "../book.html",
+      "serviceLabel": "Book a visit"
+    }
+  ],
+  "posts": [
+    {
+      "draft": true,
+      "title": "Draft",
+      "slug": "draft",
+      "topic": "puppies",
+      "date": "",
+      "excerpt": "",
+      "image": "",
+      "imageWebp": "",
+      "imageAlt": ""
+    }
+  ]
+}
