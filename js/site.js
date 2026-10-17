@@ -29,6 +29,8 @@
   var opener = null;
   var startX = 0;
   var startY = 0;
+  var lastX = 0;
+  var lastY = 0;
 
   function show(next) {
     index = (next + shots.length) % shots.length;
@@ -67,16 +69,80 @@
     if (event.key === "ArrowRight") { event.preventDefault(); show(index + 1); }
   });
 
-  dialog.addEventListener("pointerdown", function (event) {
-    if (event.target.closest && event.target.closest("button")) return;
-    startX = event.clientX;
-    startY = event.clientY;
-  });
-  dialog.addEventListener("pointerup", function (event) {
-    if (event.target.closest && event.target.closest("button")) return;
-    var dx = event.clientX - startX;
-    var dy = event.clientY - startY;
+  var tracking = false;
+  var pointerId = null;
+
+  function onButton(target) {
+    return target && target.closest && target.closest("button");
+  }
+
+  function arm(x, y) {
+    tracking = true;
+    startX = lastX = x;
+    startY = lastY = y;
+  }
+
+  function note(x, y) {
+    if (!tracking) return;
+    lastX = x;
+    lastY = y;
+  }
+
+  function finish() {
+    if (!tracking) return;
+    tracking = false;
+    pointerId = null;
+    var dx = lastX - startX;
+    var dy = lastY - startY;
     if (Math.abs(dx) < 40 || Math.abs(dx) < Math.abs(dy)) return;
     show(dx < 0 ? index + 1 : index - 1);
+  }
+
+  dialog.addEventListener("touchstart", function (event) {
+    if (event.touches.length !== 1 || onButton(event.target)) return;
+    var touch = event.touches[0];
+    arm(touch.clientX, touch.clientY);
+  }, { passive: true });
+
+  dialog.addEventListener("touchmove", function (event) {
+    if (!tracking || event.touches.length !== 1) return;
+    note(event.touches[0].clientX, event.touches[0].clientY);
+  }, { passive: true });
+
+  dialog.addEventListener("touchend", function (event) {
+    if (event.changedTouches && event.changedTouches.length) {
+      note(event.changedTouches[0].clientX, event.changedTouches[0].clientY);
+    }
+    finish();
+  }, { passive: true });
+
+  dialog.addEventListener("touchcancel", function (event) {
+    if (event.changedTouches && event.changedTouches.length) {
+      note(event.changedTouches[0].clientX, event.changedTouches[0].clientY);
+    }
+    finish();
+  }, { passive: true });
+
+  dialog.addEventListener("pointerdown", function (event) {
+    if (event.pointerType === "touch" || onButton(event.target)) return;
+    pointerId = event.pointerId;
+    arm(event.clientX, event.clientY);
+    if (dialog.setPointerCapture) dialog.setPointerCapture(event.pointerId);
+  });
+
+  dialog.addEventListener("pointermove", function (event) {
+    if (!tracking || event.pointerId !== pointerId) return;
+    note(event.clientX, event.clientY);
+  });
+
+  dialog.addEventListener("pointerup", function (event) {
+    if (event.pointerType === "touch" || event.pointerId !== pointerId) return;
+    note(event.clientX, event.clientY);
+    finish();
+  });
+
+  dialog.addEventListener("pointercancel", function (event) {
+    if (event.pointerType === "touch" || event.pointerId !== pointerId) return;
+    finish();
   });
 })();
