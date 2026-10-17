@@ -215,7 +215,7 @@ svg.flip { transform: scaleX(-1); }
   margin-top: 1.2rem;
 }
 .nav-dialog .header-tools .btn { grid-column: auto; grid-row: auto; width: 100%; }
-#puppies, #story, #films, #videos, #hours, #inquiries { scroll-margin-top: 12rem; }
+#puppies, #story, #films, #videos, #hours, #inquiries, #reviews, #family-reviews, #leave-review, #review-thanks { scroll-margin-top: 12rem; }
 .header-rule { height: 1px; margin: 0; border: 0; background: var(--foil); }
 
 .hero { position: relative; overflow: hidden; padding: 1.5rem 0 2.5rem; }
@@ -348,6 +348,80 @@ h3, .card h2 { margin: 0 0 0.35rem; font-size: 1.55rem; line-height: 1.25; }
   flex: 1;
   height: 1px;
   background: var(--foil);
+}
+.review-list { display: grid; gap: 0.9rem; margin-top: 0.4rem; }
+.review {
+  margin: 0;
+  padding: 1.15rem 1.2rem 1.05rem;
+  background: var(--cream);
+  border: 1px solid #e4d3bc;
+}
+.review-stars { margin: 0; color: var(--gold-ink); letter-spacing: 0.16em; }
+.review > p:not(.review-stars) { white-space: pre-wrap; }
+.review footer {
+  color: var(--gold-ink);
+  font: 600 0.95rem/1.45 var(--label);
+  letter-spacing: 0.06em;
+}
+#reviews .actions { justify-content: center; }
+.leave-grid { display: grid; gap: 1.2rem; align-items: start; }
+.stars-input { border: 0; margin: 0; padding: 0; min-inline-size: 0; }
+.stars-input legend {
+  padding: 0;
+  font: 600 1rem/1.3 var(--label);
+  letter-spacing: 0.08em;
+  text-transform: lowercase;
+  font-variant: small-caps;
+  color: var(--gold-ink);
+}
+.star-choices { display: flex; flex-wrap: wrap; gap: 0.45rem; margin-top: 0.45rem; }
+.star-choices label {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 48px;
+  min-height: 48px;
+  padding: 0 0.85rem;
+  border: 1px solid #d9bc78;
+  background: white;
+  cursor: pointer;
+  text-transform: none;
+  letter-spacing: 0;
+  font-variant: normal;
+  font: 600 1.05rem/1 var(--font);
+  color: var(--plum);
+}
+.star-choices input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+.star-choices label:has(input:checked) { background: var(--plum); color: var(--cream); border-color: var(--plum); }
+.star-choices label:has(input:focus-visible) { outline: 3px solid var(--gold-ink); outline-offset: 3px; }
+.review-also {
+  padding: 1.15rem 1.2rem 1.25rem;
+  background: var(--cream);
+  border: 1px solid #e4d3bc;
+}
+.review-also .btn { width: 100%; }
+.review-thanks {
+  margin-top: 1rem;
+  padding: 1rem 1.1rem;
+  background: var(--cream);
+  border: 1px solid #d9bc78;
+}
+@media (min-width: 720px) {
+  .leave-grid { grid-template-columns: 1.45fr 0.85fr; }
+}
+@media (max-width: 719px) {
+  #reviews .actions { flex-direction: column; align-items: stretch; }
+  #reviews .actions .btn { width: 100%; }
 }
 .cards { display: grid; gap: 0.9rem; }
 .card {
@@ -490,6 +564,7 @@ input, textarea, select {
   margin: 0 auto;
   object-fit: contain;
   background: var(--ivory);
+  touch-action: pan-y;
 }
 .viewer-bar, #viewer form { display: flex; justify-content: flex-end; align-items: center; gap: 0.5rem; margin: 0 0 0.45rem; }
 .viewer-count { margin: 0 auto 0 0; color: var(--ivory); font: 600 0.95rem/1 var(--label); letter-spacing: 0.12em; }
@@ -503,7 +578,7 @@ input, textarea, select {
   font: 600 1rem/1 var(--label);
   letter-spacing: 0.08em;
 }
-.viewer-stage { position: relative; }
+.viewer-stage { position: relative; touch-action: pan-y; }
 .viewer-nav {
   position: absolute;
   top: 50%;
@@ -612,7 +687,7 @@ input, textarea, select {
     gap: 0.55rem;
   }
   .header-tools .btn { grid-column: auto; grid-row: auto; width: auto; }
-  #puppies, #story, #films, #videos, #hours, #inquiries { scroll-margin-top: 13rem; }
+  #puppies, #story, #films, #videos, #hours, #inquiries, #reviews, #family-reviews, #leave-review, #review-thanks { scroll-margin-top: 13rem; }
   .hero { padding: 2.2rem 0 3rem; }
   .hero-grid { grid-template-columns: 1.1fr 0.95fr; min-height: 36rem; }
   .hero-watermark { left: 0; top: 0.4rem; opacity: 0.55; }
