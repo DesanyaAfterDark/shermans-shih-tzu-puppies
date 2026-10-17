@@ -215,7 +215,7 @@ svg.flip { transform: scaleX(-1); }
   margin-top: 1.2rem;
 }
 .nav-dialog .header-tools .btn { grid-column: auto; grid-row: auto; width: 100%; }
-#puppies, #story, #films, #videos, #hours, #inquiries, #reviews, #family-reviews, #leave-review, #review-thanks { scroll-margin-top: 12rem; }
+#puppies, #story, #letter, #films, #visit, #next, #videos, #hours, #inquiries, #reviews, #family-reviews, #leave-review, #review-thanks { scroll-margin-top: 12rem; }
 .header-rule { height: 1px; margin: 0; border: 0; background: var(--foil); }
 
 .hero { position: relative; overflow: hidden; padding: 1.5rem 0 2.5rem; }
@@ -263,6 +263,9 @@ h2 { margin: 0 0 0.7rem; font-size: clamp(2rem, 4vw, 3rem); line-height: 1.15; }
 h3, .card h2 { margin: 0 0 0.35rem; font-size: 1.55rem; line-height: 1.25; }
 .lede, .hero-copy > p { max-width: 38rem; color: var(--muted); font-size: 1.125rem; line-height: 1.7; }
 .actions { display: flex; flex-wrap: wrap; gap: 0.8rem; margin: 1.4rem 0 0.9rem; }
+.actions.center { justify-content: center; }
+.hero-next { margin: 0.15rem 0 0.85rem; font-size: 1.0625rem; }
+.hero-next a { text-underline-offset: 0.18em; }
 .btn, button.btn, form button {
   display: inline-flex;
   align-items: center;
@@ -335,7 +338,24 @@ h3, .card h2 { margin: 0 0 0.35rem; font-size: 1.55rem; line-height: 1.25; }
 .plaque .script { display: block; color: var(--rose); font: 400 2.4rem/1.1 var(--script); }
 
 .section { padding: 2.6rem 0; }
+.band { background: var(--cream); }
+.band .card,
+.band .review { background: var(--ivory); }
 .center { text-align: center; }
+.closing {
+  background: var(--plum);
+  color: var(--ivory);
+  text-align: center;
+  padding: 2.6rem 0 2.9rem;
+}
+.closing h2,
+.closing p { color: var(--ivory); }
+.closing .eyebrow { color: var(--ivory); }
+.closing .actions { justify-content: center; }
+.closing .btn-primary { background: var(--ivory); color: var(--plum); }
+.closing .btn-primary:hover { background: var(--cream); color: var(--plum); }
+.closing .btn-phone { color: var(--ivory); border-color: #e9d29a; }
+.closing .btn-phone:hover { background: var(--ivory); color: var(--plum); }
 .ornament {
   display: flex;
   align-items: center;
@@ -420,7 +440,17 @@ h3, .card h2 { margin: 0 0 0.35rem; font-size: 1.55rem; line-height: 1.25; }
   .leave-grid { grid-template-columns: 1.45fr 0.85fr; }
 }
 @media (max-width: 719px) {
+  .section { padding: 2.05rem 0; }
+  .hero { padding: 1.15rem 0 1.7rem; }
+  .hero .actions,
+  .closing .actions,
+  #visit .actions,
+  #films .actions,
   #reviews .actions { flex-direction: column; align-items: stretch; }
+  .hero .actions .btn,
+  .closing .actions .btn,
+  #visit .actions .btn,
+  #films .actions .btn,
   #reviews .actions .btn { width: 100%; }
 }
 .cards { display: grid; gap: 0.9rem; }
@@ -687,7 +717,7 @@ input, textarea, select {
     gap: 0.55rem;
   }
   .header-tools .btn { grid-column: auto; grid-row: auto; width: auto; }
-  #puppies, #story, #films, #videos, #hours, #inquiries, #reviews, #family-reviews, #leave-review, #review-thanks { scroll-margin-top: 13rem; }
+  #puppies, #story, #letter, #films, #visit, #next, #videos, #hours, #inquiries, #reviews, #family-reviews, #leave-review, #review-thanks { scroll-margin-top: 13rem; }
   .hero { padding: 2.2rem 0 3rem; }
   .hero-grid { grid-template-columns: 1.1fr 0.95fr; min-height: 36rem; }
   .hero-watermark { left: 0; top: 0.4rem; opacity: 0.55; }
