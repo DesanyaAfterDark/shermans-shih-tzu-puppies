@@ -40,9 +40,9 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": ["LocalBusiness", "PetStore"],
     "name": "Sherman's Shih Tzu Puppies",
-    "description": "AKC and CKC registered Shih Tzus. DNA tested, with a health guarantee. In-person visits and FaceTime visits.",
+    "description": "AKC and CKC registered Shih Tzus. DNA tested, with a health guarantee. In-person visits and FaceTime visits. Pickup is in person in Niota. We do not ship.",
     "url": "https://desanyaafterdark.github.io/shermans-shih-tzu-puppies/",
     "image": "https://desanyaafterdark.github.io/shermans-shih-tzu-puppies/images/og-image.jpg",
     "telephone": "+14239203750",
@@ -56,14 +56,8 @@
       "addressCountry": "US"
     },
     "areaServed": [
-      {
-        "@type": "AdministrativeArea",
-        "name": "East Tennessee"
-      },
-      {
-        "@type": "Country",
-        "name": "United States"
-      }
+      { "@type": "AdministrativeArea", "name": "East Tennessee" },
+      { "@type": "Country", "name": "United States" }
     ],
     "openingHoursSpecification": [
       {
@@ -79,10 +73,7 @@
         "closes": "17:00"
       }
     ],
-    "employee": {
-      "@type": "Person",
-      "name": "Shannon Sherman"
-    },
+    "employee": { "@type": "Person", "name": "Shannon Sherman" },
     "sameAs": [
       "https://www.facebook.com/ShermanShihTzuPuppies/",
       "https://www.instagram.com/shermans_shihtzu_puppies/",
@@ -133,10 +124,11 @@
   </p>
   <header class="site-header">
     <div class="wrap header-inner">
-      <nav class="nav-left" aria-label="Primary">
+      <nav class="nav-pages" aria-label="Pages">
+        <a href="gallery.html">Gallery</a>
+        <a href="index.html" aria-current="page">Home</a>
         <a href="#puppies">Our puppies</a>
         <a href="#story">Our story</a>
-        <a href="#films">Films</a>
       </nav>
       <a class="brand" href="index.html">
         <picture>
@@ -149,25 +141,28 @@
         </picture>
         <span class="visually-hidden">Sherman's Shih Tzu Puppies</span>
       </a>
-      <nav class="nav-right" aria-label="Visit">
-        <a href="gallery.html">Gallery</a>
-        <a href="book.html">Book a visit</a>
-        <a href="contact.html">Visit</a>
-        <a class="phone" href="tel:+14239203750">423-920-3750</a>
-      </nav>
-      <details class="menu">
-        <summary>Menu</summary>
-        <ul>
-          <li><a href="#puppies">Our puppies</a></li>
-          <li><a href="#story">Our story</a></li>
-          <li><a href="#films">Films</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="book.html">Book a visit</a></li>
-          <li><a href="contact.html">Visit</a></li>
-          <li><a href="tel:+14239203750">423-920-3750</a></li>
-        </ul>
-      </details>
+      <div class="header-tools">
+        <a class="btn btn-primary" href="book.html">Book a visit</a>
+        <a class="btn btn-phone" href="tel:+14239203750">423-920-3750</a>
+        <button class="menu-open" type="button" aria-expanded="false" aria-controls="site-menu">Menu</button>
+      </div>
     </div>
+    <dialog id="site-menu" class="nav-dialog" aria-label="Menu">
+      <div class="nav-dialog-bar">
+        <p class="nav-dialog-title">Menu</p>
+        <button class="menu-close" type="button">Close</button>
+      </div>
+      <nav aria-label="Pages">
+          <a href="gallery.html">Gallery</a>
+          <a href="index.html" aria-current="page">Home</a>
+          <a href="#puppies">Our puppies</a>
+          <a href="#story">Our story</a>
+      </nav>
+      <div class="header-tools">
+        <a class="btn btn-primary" href="book.html">Book a visit</a>
+        <a class="btn btn-phone" href="tel:+14239203750">423-920-3750</a>
+      </div>
+    </dialog>
   </header>
   <hr class="header-rule">
   <main id="main">
@@ -190,7 +185,7 @@
             <picture>
               <source type="image/avif" srcset="images/opt/adorable-shih-tzu-puppies-480.avif 480w, images/opt/adorable-shih-tzu-puppies-800.avif 800w, images/opt/adorable-shih-tzu-puppies-1400.avif 1400w" sizes="(min-width: 960px) 470px, 88vw">
               <source type="image/webp" srcset="images/opt/adorable-shih-tzu-puppies-480.webp 480w, images/opt/adorable-shih-tzu-puppies-800.webp 800w, images/opt/adorable-shih-tzu-puppies-1400.webp 1400w" sizes="(min-width: 960px) 470px, 88vw">
-              <img src="images/opt/adorable-shih-tzu-puppies-800.jpg" srcset="images/opt/adorable-shih-tzu-puppies-480.jpg 480w, images/opt/adorable-shih-tzu-puppies-800.jpg 800w, images/opt/adorable-shih-tzu-puppies-1400.jpg 1400w" sizes="(min-width: 960px) 470px, 88vw" width="1600" height="1200" alt="Adorable Shih Tzu Puppies" fetchpriority="high">
+              <img src="images/opt/adorable-shih-tzu-puppies-800.jpg" srcset="images/opt/adorable-shih-tzu-puppies-480.jpg 480w, images/opt/adorable-shih-tzu-puppies-800.jpg 800w, images/opt/adorable-shih-tzu-puppies-1400.jpg 1400w" sizes="(min-width: 960px) 470px, 88vw" width="1600" height="1200" alt="A gold and white puppy on a soft pink blanket." fetchpriority="high">
             </picture>
           </div>
           <div class="rose-pair" aria-hidden="true">
@@ -231,7 +226,7 @@
       <div class="wrap split">
         <picture>
           <source type="image/avif" srcset="images/opt/house-480.avif 480w, images/opt/house-720.avif 720w" sizes="(min-width: 720px) 36vw, 100vw">
-          <img src="images/opt/house-720.jpg" srcset="images/opt/house-480.jpg 480w, images/opt/house-720.jpg 720w" sizes="(min-width: 720px) 36vw, 100vw" width="768" height="1024" alt="Sherman's Shih Tzu Puppies" loading="lazy">
+          <picture><source type="image/avif" srcset="images/opt/house-480.avif 480w, images/opt/house-720.avif 720w" sizes="(min-width: 720px) 36vw, 100vw"><source type="image/webp" srcset="images/opt/house-480.webp 480w, images/opt/house-720.webp 720w" sizes="(min-width: 720px) 36vw, 100vw"><img src="images/opt/house-720.jpg" srcset="images/opt/house-480.jpg 480w, images/opt/house-720.jpg 720w" sizes="(min-width: 720px) 36vw, 100vw" width="768" height="1024" alt="Sherman's Shih Tzu Puppies" loading="lazy"></picture>
         </picture>
         <div class="note">
           <p class="eyebrow">A letter from</p>
@@ -272,32 +267,10 @@
     </section>
 
     <section class="section" id="films">
-      <div class="wrap">
+      <div class="wrap-narrow">
         <p class="eyebrow center">Films</p>
         <h2 class="center">Videos</h2>
-        <div class="video-grid">
-          <button class="video-play" type="button" data-title="Sherman's Shih Tzu Puppies video 1" data-src="https://player.vimeo.com/video/1053346980?h=29ce376a41&amp;title=0&amp;byline=0&amp;portrait=0" aria-label="Play Sherman's Shih Tzu Puppies video 1">
-            <picture>
-              <source type="image/webp" srcset="images/posters/home-1.webp">
-              <img src="images/posters/home-1.jpg" width="800" height="1423" alt="" loading="lazy">
-            </picture>
-            <span class="play-icon" aria-hidden="true"></span>
-          </button>
-          <button class="video-play" type="button" data-title="Sherman's Shih Tzu Puppies video 2" data-src="https://player.vimeo.com/video/1053373553?h=edbad393ab&amp;title=0&amp;byline=0&amp;portrait=0" aria-label="Play Sherman's Shih Tzu Puppies video 2">
-            <picture>
-              <source type="image/webp" srcset="images/posters/home-2.webp">
-              <img src="images/posters/home-2.jpg" width="800" height="1423" alt="" loading="lazy">
-            </picture>
-            <span class="play-icon" aria-hidden="true"></span>
-          </button>
-          <button class="video-play" type="button" data-title="Sherman's Shih Tzu Puppies video 3" data-src="https://player.vimeo.com/video/1053376618?h=36751f8f4f&amp;title=0&amp;byline=0&amp;portrait=0" aria-label="Play Sherman's Shih Tzu Puppies video 3">
-            <picture>
-              <source type="image/webp" srcset="images/posters/home-3.webp">
-              <img src="images/posters/home-3.jpg" width="800" height="1423" alt="" loading="lazy">
-            </picture>
-            <span class="play-icon" aria-hidden="true"></span>
-          </button>
-        </div>
+        <p class="center">The films are with the photographs in the <a href="gallery.html#videos">gallery</a>.</p>
       </div>
     </section>
 
@@ -307,10 +280,10 @@
         <h2 class="center">A few of the puppies</h2>
         <p class="center">A few photographs from our home. More are in the <a href="gallery.html">gallery</a>.</p>
         <div class="photo-grid">
-          <figure class="tile"><picture><source type="image/avif" srcset="images/opt/black-female-akc-480.avif 480w, images/opt/black-female-akc-800.avif 800w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)"><img src="images/opt/black-female-akc-800.jpg" srcset="images/opt/black-female-akc-480.jpg 480w, images/opt/black-female-akc-800.jpg 800w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)" width="980" height="1306" alt="A black puppy with a white chest, resting on a pink bed." loading="lazy"></picture><figcaption>A black puppy with a white chest, resting on a pink bed.</figcaption></figure>
+          <figure class="tile"><picture><source type="image/avif" srcset="images/opt/zoey-shih-tzu-puppy-480.avif 480w, images/opt/zoey-shih-tzu-puppy-800.avif 800w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)"><source type="image/webp" srcset="images/opt/zoey-shih-tzu-puppy-480.webp 480w, images/opt/zoey-shih-tzu-puppy-800.webp 800w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)"><img src="images/opt/zoey-shih-tzu-puppy-800.jpg" srcset="images/opt/zoey-shih-tzu-puppy-480.jpg 480w, images/opt/zoey-shih-tzu-puppy-800.jpg 800w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)" width="980" height="735" alt="A black and white puppy on a pale bed, with a toy nearby." loading="lazy"></picture><figcaption>A black and white puppy on a pale bed, with a toy nearby.</figcaption></figure>
+          <figure class="tile"><picture><source type="image/avif" srcset="images/opt/black-female-akc-480.avif 480w, images/opt/black-female-akc-800.avif 800w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)"><source type="image/webp" srcset="images/opt/black-female-akc-480.webp 480w, images/opt/black-female-akc-800.webp 800w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)"><img src="images/opt/black-female-akc-800.jpg" srcset="images/opt/black-female-akc-480.jpg 480w, images/opt/black-female-akc-800.jpg 800w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)" width="980" height="1306" alt="A black puppy with a white chest, resting on a pink bed." loading="lazy"></picture><figcaption>A black puppy with a white chest, resting on a pink bed.</figcaption></figure>
           <figure class="tile"><picture><source type="image/avif" srcset="images/opt/spring-time-shih-tzu-puppy-480.avif 480w, images/opt/spring-time-shih-tzu-puppy-800.avif 800w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)"><source type="image/webp" srcset="images/opt/spring-time-shih-tzu-puppy-480.webp 480w, images/opt/spring-time-shih-tzu-puppy-800.webp 800w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)"><img src="images/opt/spring-time-shih-tzu-puppy-800.jpg" srcset="images/opt/spring-time-shih-tzu-puppy-480.jpg 480w, images/opt/spring-time-shih-tzu-puppy-800.jpg 800w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)" width="980" height="735" alt="A gold and white puppy in the grass, with pink flowers behind." loading="lazy"></picture><figcaption>A gold and white puppy in the grass, with pink flowers behind.</figcaption></figure>
           <figure class="tile"><picture><source type="image/avif" srcset="images/opt/white-and-apricot-shih-tzu-puppy-480.avif 480w, images/opt/white-and-apricot-shih-tzu-puppy-800.avif 800w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)"><source type="image/webp" srcset="images/opt/white-and-apricot-shih-tzu-puppy-480.webp 480w, images/opt/white-and-apricot-shih-tzu-puppy-800.webp 800w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)"><img src="images/opt/white-and-apricot-shih-tzu-puppy-800.jpg" srcset="images/opt/white-and-apricot-shih-tzu-puppy-480.jpg 480w, images/opt/white-and-apricot-shih-tzu-puppy-800.jpg 800w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)" width="1400" height="1050" alt="A white and apricot puppy with a pink bow, in a pink basket." loading="lazy"></picture><figcaption>A white and apricot puppy with a pink bow, in a pink basket.</figcaption></figure>
-          <figure class="tile"><picture><source type="image/avif" srcset="images/opt/zoey-shih-tzu-puppy-480.avif 480w, images/opt/zoey-shih-tzu-puppy-800.avif 800w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)"><source type="image/webp" srcset="images/opt/zoey-shih-tzu-puppy-480.webp 480w, images/opt/zoey-shih-tzu-puppy-800.webp 800w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)"><img src="images/opt/zoey-shih-tzu-puppy-800.jpg" srcset="images/opt/zoey-shih-tzu-puppy-480.jpg 480w, images/opt/zoey-shih-tzu-puppy-800.jpg 800w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)" width="980" height="735" alt="A black and white puppy on a pale bed, with a toy nearby." loading="lazy"></picture><figcaption>A black and white puppy on a pale bed, with a toy nearby.</figcaption></figure>
         </div>
       </div>
     </section>
@@ -322,13 +295,12 @@
       <div class="foot-grid">
         <div>
           <p>Copyright © 2026 Sherman's Shih Tzu Puppies. All rights reserved.</p>
-          <p>Powered by <a href="https://desanya.tech">Desanya's Web Designs</a>. <a href="mailto:desanyaafterdark@gmail.com">Report a site problem</a>.</p>
+          <p>Website by <a href="https://desanya.tech">Desanya Studio</a>. <a href="mailto:desanyaafterdark@gmail.com">Report a site problem</a>.</p>
         </div>
         <div>
           <h2>Visit</h2>
           <ul>
             <li><a href="book.html">Book a visit</a></li>
-            <li><a href="contact.html">Contact</a></li>
             <li><a href="gallery.html">Gallery</a></li>
             <li><a href="index.html">Home</a></li>
             <li><a href="privacy.html">Privacy policy</a></li>
@@ -347,6 +319,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/nav.js"></script>
   <script src="js/announce.js"></script>
   <script src="js/site.js"></script>
   <script src="js/chat.js"></script>

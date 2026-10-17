@@ -39,7 +39,7 @@
   }
 
   function contact() {
-    return link(root + "contact.html", "contact page");
+    return link(root + "book.html", "booking page");
   }
 
   function paragraph(parts) {
