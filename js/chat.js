@@ -57,7 +57,7 @@
       keywords: ["available", "availability", "litter", "wait list", "waitlist"],
       answer: function () {
         return [
-          paragraph(["AKC registered Shih Tzu puppies: $1,600"]),
+          paragraph(["AKC registered Shih Tzu puppies: $1,600. CKC puppies: none available right now."]),
           paragraph(["Puppies are raised in the home and handled daily."]),
           paragraph([
             "Call or message us for current litter availability. Even if no puppies are available right now, you can still call and ask about the wait list."
@@ -163,7 +163,7 @@
 
   function priceAnswer() {
     return [
-      paragraph(["AKC registered Shih Tzu puppies: $1,600"]),
+      paragraph(["AKC registered Shih Tzu puppies: $1,600. CKC puppies: none available right now."]),
       paragraph(["Visit and meet the puppies, put down a deposit to hold your puppy, then when the puppy is old enough to go home you pick up in person and pay the remaining balance."])
     ];
   }
