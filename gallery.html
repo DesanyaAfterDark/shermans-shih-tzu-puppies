@@ -25,6 +25,8 @@
   <link rel="preload" href="fonts/mulish-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/playfair-display-normal-400.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/site.css">
+  <link rel="stylesheet" href="vendor/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/gallery.css">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-BF2FDR6KMM"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -158,149 +160,49 @@
         <p><a class="btn btn-primary" href="book.html">Book a visit</a></p>
       </div>
     </section>
-    <section class="section" id="photos">
-      <div class="wrap">
-        <h2>Photos</h2>
+    <section class="cinema" id="photos" data-gallery aria-labelledby="photos-heading">
+      <div class="cinema-head wrap">
+        <h2 id="photos-heading">Photos</h2>
         <p>A few photographs from our home.</p>
-        <div class="photo-grid">
-          <button class="shot" type="button" data-full="images/black-female-akc-wide.jpg">
-            <picture>
-              <source type="image/avif" srcset="images/opt/black-female-akc-wide-480.avif 480w, images/opt/black-female-akc-wide-800.avif 800w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)">
-              <source type="image/webp" srcset="images/opt/black-female-akc-wide-480.webp 480w, images/opt/black-female-akc-wide-800.webp 800w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)">
-              <img src="images/opt/black-female-akc-wide-800.jpg" srcset="images/opt/black-female-akc-wide-480.jpg 480w, images/opt/black-female-akc-wide-800.jpg 800w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)" width="1200" height="900" alt="A black and white puppy on a blue bed, beside a small stuffed lion." loading="lazy">
-            </picture>
-            <span>A black and white puppy on a blue bed, beside a small stuffed lion.</span>
-          </button>
-          <button class="shot" type="button" data-full="images/zoey-shih-tzu-puppy-1.jpg">
-            <picture>
-              <source type="image/avif" srcset="images/opt/zoey-shih-tzu-puppy-1-480.avif 480w, images/opt/zoey-shih-tzu-puppy-1-800.avif 800w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)">
-              <source type="image/webp" srcset="images/opt/zoey-shih-tzu-puppy-1-480.webp 480w, images/opt/zoey-shih-tzu-puppy-1-800.webp 800w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)">
-              <img src="images/opt/zoey-shih-tzu-puppy-1-800.jpg" srcset="images/opt/zoey-shih-tzu-puppy-1-480.jpg 480w, images/opt/zoey-shih-tzu-puppy-1-800.jpg 800w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)" width="980" height="735" alt="A black and white puppy on a blue blanket, a plush toy at one side." loading="lazy">
-            </picture>
-            <span>A black and white puppy on a blue blanket, a plush toy at one side.</span>
-          </button>
-          <button class="shot" type="button" data-full="images/zoey-shih-tzu-puppy.jpg">
-            <picture>
-              <source type="image/avif" srcset="images/opt/zoey-shih-tzu-puppy-480.avif 480w, images/opt/zoey-shih-tzu-puppy-800.avif 800w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)">
-              <source type="image/webp" srcset="images/opt/zoey-shih-tzu-puppy-480.webp 480w, images/opt/zoey-shih-tzu-puppy-800.webp 800w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)">
-              <img src="images/opt/zoey-shih-tzu-puppy-800.jpg" srcset="images/opt/zoey-shih-tzu-puppy-480.jpg 480w, images/opt/zoey-shih-tzu-puppy-800.jpg 800w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)" width="980" height="735" alt="A black and white puppy on a pale bed, with a toy nearby." loading="lazy">
-            </picture>
-            <span>A black and white puppy on a pale bed, with a toy nearby.</span>
-          </button>
-          <button class="shot" type="button" data-full="images/black-female-akc.jpg">
-            <picture>
-              <source type="image/avif" srcset="images/opt/black-female-akc-480.avif 480w, images/opt/black-female-akc-800.avif 800w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)">
-              <source type="image/webp" srcset="images/opt/black-female-akc-480.webp 480w, images/opt/black-female-akc-800.webp 800w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)">
-              <img src="images/opt/black-female-akc-800.jpg" srcset="images/opt/black-female-akc-480.jpg 480w, images/opt/black-female-akc-800.jpg 800w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)" width="980" height="1306" alt="A black puppy with a white chest, resting on a pink bed." loading="lazy">
-            </picture>
-            <span>A black puppy with a white chest, resting on a pink bed.</span>
-          </button>
-          <button class="shot" type="button" data-full="images/tri-color-female-akc-limited.jpg">
-            <picture>
-              <source type="image/avif" srcset="images/opt/tri-color-female-akc-limited-480.avif 480w, images/opt/tri-color-female-akc-limited-800.avif 800w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)">
-              <source type="image/webp" srcset="images/opt/tri-color-female-akc-limited-480.webp 480w, images/opt/tri-color-female-akc-limited-800.webp 800w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)">
-              <img src="images/opt/tri-color-female-akc-limited-800.jpg" srcset="images/opt/tri-color-female-akc-limited-480.jpg 480w, images/opt/tri-color-female-akc-limited-800.jpg 800w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)" width="980" height="735" alt="A black, white, and tan puppy on a patterned quilt." loading="lazy">
-            </picture>
-            <span>A black, white, and tan puppy on a patterned quilt.</span>
-          </button>
-          <button class="shot" type="button" data-full="images/tri-color-female-akc-limited-1.jpg">
-            <picture>
-              <source type="image/avif" srcset="images/opt/tri-color-female-akc-limited-1-480.avif 480w, images/opt/tri-color-female-akc-limited-1-800.avif 800w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)">
-              <source type="image/webp" srcset="images/opt/tri-color-female-akc-limited-1-480.webp 480w, images/opt/tri-color-female-akc-limited-1-800.webp 800w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)">
-              <img src="images/opt/tri-color-female-akc-limited-1-800.jpg" srcset="images/opt/tri-color-female-akc-limited-1-480.jpg 480w, images/opt/tri-color-female-akc-limited-1-800.jpg 800w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)" width="980" height="735" alt="A black, white, and tan puppy up close on a patterned quilt." loading="lazy">
-            </picture>
-            <span>A black, white, and tan puppy up close on a patterned quilt.</span>
-          </button>
-          <button class="shot" type="button" data-full="images/shih-tzu-puppies-for-sale.jpg">
-            <picture>
-              <source type="image/avif" srcset="images/opt/shih-tzu-puppies-for-sale-480.avif 480w, images/opt/shih-tzu-puppies-for-sale-768.avif 768w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)">
-              <source type="image/webp" srcset="images/opt/shih-tzu-puppies-for-sale-480.webp 480w, images/opt/shih-tzu-puppies-for-sale-768.webp 768w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)">
-              <img src="images/opt/shih-tzu-puppies-for-sale-768.jpg" srcset="images/opt/shih-tzu-puppies-for-sale-480.jpg 480w, images/opt/shih-tzu-puppies-for-sale-768.jpg 768w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)" width="768" height="1024" alt="A gold and white puppy in a round gray bed." loading="lazy">
-            </picture>
-            <span>A gold and white puppy in a round gray bed.</span>
-          </button>
-          <button class="shot" type="button" data-full="images/spring-time-shih-tzu-puppy.jpg">
-            <picture>
-              <source type="image/avif" srcset="images/opt/spring-time-shih-tzu-puppy-480.avif 480w, images/opt/spring-time-shih-tzu-puppy-800.avif 800w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)">
-              <source type="image/webp" srcset="images/opt/spring-time-shih-tzu-puppy-480.webp 480w, images/opt/spring-time-shih-tzu-puppy-800.webp 800w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)">
-              <img src="images/opt/spring-time-shih-tzu-puppy-800.jpg" srcset="images/opt/spring-time-shih-tzu-puppy-480.jpg 480w, images/opt/spring-time-shih-tzu-puppy-800.jpg 800w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)" width="980" height="735" alt="A gold and white puppy in the grass, with pink flowers behind." loading="lazy">
-            </picture>
-            <span>A gold and white puppy in the grass, with pink flowers behind.</span>
-          </button>
-          <button class="shot" type="button" data-full="images/jasmine-male-shih-tzu.jpg">
-            <picture>
-              <source type="image/avif" srcset="images/opt/jasmine-male-shih-tzu-384.avif">
-              <source type="image/webp" srcset="images/opt/jasmine-male-shih-tzu-384.webp">
-              <img src="images/jasmine-male-shih-tzu.jpg" width="384" height="512" alt="A gold and white puppy on a rose-colored blanket." loading="lazy">
-            </picture>
-            <span>A gold and white puppy on a rose-colored blanket.</span>
-          </button>
-          <button class="shot" type="button" data-full="images/adorable-shih-tzu-puppies.jpg">
-            <picture>
-              <source type="image/avif" srcset="images/opt/adorable-shih-tzu-puppies-480.avif 480w, images/opt/adorable-shih-tzu-puppies-800.avif 800w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)">
-              <source type="image/webp" srcset="images/opt/adorable-shih-tzu-puppies-480.webp 480w, images/opt/adorable-shih-tzu-puppies-800.webp 800w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)">
-              <img src="images/opt/adorable-shih-tzu-puppies-800.jpg" srcset="images/opt/adorable-shih-tzu-puppies-480.jpg 480w, images/opt/adorable-shih-tzu-puppies-800.jpg 800w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)" width="1600" height="1200" alt="A gold and white puppy on a soft pink blanket." loading="lazy">
-            </picture>
-            <span>A gold and white puppy on a soft pink blanket.</span>
-          </button>
-          <button class="shot" type="button" data-full="images/black-male-akc.jpg">
-            <picture>
-              <source type="image/avif" srcset="images/opt/black-male-akc-300.avif">
-              <source type="image/webp" srcset="images/opt/black-male-akc-300.webp">
-              <img src="images/black-male-akc.jpg" width="300" height="225" alt="A small black puppy in a basket lined with pink." loading="lazy">
-            </picture>
-            <span>A small black puppy in a basket lined with pink.</span>
-          </button>
-          <button class="shot" type="button" data-full="images/white-and-apricot-shih-tzu-puppy.jpg">
-            <picture>
-              <source type="image/avif" srcset="images/opt/white-and-apricot-shih-tzu-puppy-480.avif 480w, images/opt/white-and-apricot-shih-tzu-puppy-800.avif 800w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)">
-              <source type="image/webp" srcset="images/opt/white-and-apricot-shih-tzu-puppy-480.webp 480w, images/opt/white-and-apricot-shih-tzu-puppy-800.webp 800w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)">
-              <img src="images/opt/white-and-apricot-shih-tzu-puppy-800.jpg" srcset="images/opt/white-and-apricot-shih-tzu-puppy-480.jpg 480w, images/opt/white-and-apricot-shih-tzu-puppy-800.jpg 800w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)" width="1400" height="1050" alt="A white and apricot puppy with a pink bow, in a pink basket." loading="lazy">
-            </picture>
-            <span>A white and apricot puppy with a pink bow, in a pink basket.</span>
-          </button>
-          <button class="shot" type="button" data-full="images/puppies-basket-litter.jpg">
-            <picture>
-              <source type="image/avif" srcset="images/opt/puppies-basket-litter-480.avif 480w, images/opt/puppies-basket-litter-800.avif 800w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)">
-              <source type="image/webp" srcset="images/opt/puppies-basket-litter-480.webp 480w, images/opt/puppies-basket-litter-800.webp 800w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)">
-              <img src="images/opt/puppies-basket-litter-800.jpg" srcset="images/opt/puppies-basket-litter-480.jpg 480w, images/opt/puppies-basket-litter-800.jpg 800w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)" width="1600" height="1200" alt="Three black puppies peeking over a wicker basket rim, with lavender behind." loading="lazy">
-            </picture>
-            <span>Three black puppies peeking over a wicker basket rim, with lavender behind.</span>
-          </button>
-          <button class="shot" type="button" data-full="images/puppies-basket-closeup.jpg">
-            <picture>
-              <source type="image/avif" srcset="images/opt/puppies-basket-closeup-480.avif 480w, images/opt/puppies-basket-closeup-800.avif 800w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)">
-              <source type="image/webp" srcset="images/opt/puppies-basket-closeup-480.webp 480w, images/opt/puppies-basket-closeup-800.webp 800w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)">
-              <img src="images/opt/puppies-basket-closeup-800.jpg" srcset="images/opt/puppies-basket-closeup-480.jpg 480w, images/opt/puppies-basket-closeup-800.jpg 800w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)" width="1600" height="1200" alt="Two black Shih Tzu puppies close up in a wicker basket on a cream blanket." loading="lazy">
-            </picture>
-            <span>Two black Shih Tzu puppies close up in a wicker basket on a cream blanket.</span>
-          </button>
-          <button class="shot shot-small" type="button" data-full="images/new-puppy-with-plush.jpg">
-            <picture>
-              <source type="image/avif" srcset="images/opt/new-puppy-with-plush-365.avif">
-              <source type="image/webp" srcset="images/opt/new-puppy-with-plush-365.webp">
-              <img src="images/new-puppy-with-plush.jpg" width="365" height="365" alt="A black Shih Tzu puppy on a white blanket next to a brown stuffed animal, by a window." loading="lazy">
-            </picture>
-            <span>A black Shih Tzu puppy on a white blanket next to a brown stuffed animal, by a window.</span>
-          </button>
-          <button class="shot" type="button" data-full="images/new-puppy-in-wagon.jpg">
-            <picture>
-              <source type="image/avif" srcset="images/opt/new-puppy-in-wagon-480.avif 480w, images/opt/new-puppy-in-wagon-800.avif 800w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)">
-              <source type="image/webp" srcset="images/opt/new-puppy-in-wagon-480.webp 480w, images/opt/new-puppy-in-wagon-800.webp 800w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)">
-              <img src="images/opt/new-puppy-in-wagon-800.jpg" srcset="images/opt/new-puppy-in-wagon-480.jpg 480w, images/opt/new-puppy-in-wagon-800.jpg 800w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)" width="980" height="980" alt="A Shih Tzu puppy in a red wagon on a pink fluffy blanket." loading="lazy">
-            </picture>
-            <span>A Shih Tzu puppy in a red wagon on a pink fluffy blanket.</span>
-          </button>
-          <button class="shot" type="button" data-full="images/new-puppy-by-flowers.jpg">
-            <picture>
-              <source type="image/avif" srcset="images/opt/new-puppy-by-flowers-480.avif 480w, images/opt/new-puppy-by-flowers-800.avif 800w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)">
-              <source type="image/webp" srcset="images/opt/new-puppy-by-flowers-480.webp 480w, images/opt/new-puppy-by-flowers-800.webp 800w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)">
-              <img src="images/opt/new-puppy-by-flowers-800.jpg" srcset="images/opt/new-puppy-by-flowers-480.jpg 480w, images/opt/new-puppy-by-flowers-800.jpg 800w" sizes="(min-width: 720px) 23rem, calc(50vw - 1.4rem)" width="2048" height="1536" alt="A black puppy on mulch by pink flowers." loading="lazy">
-            </picture>
-            <span>A black puppy on mulch by pink flowers.</span>
-          </button>
+      </div>
+      <div class="gallery-filters wrap" hidden></div>
+      <div class="gallery-frame">
+        <div class="swiper gallery-main" role="region" aria-roledescription="carousel" aria-label="Photographs">
+          <div class="swiper-wrapper"></div>
+        </div>
+        <button class="gal-nav gal-prev" type="button" aria-label="Previous photo"><span aria-hidden="true">‹</span></button>
+        <button class="gal-nav gal-next" type="button" aria-label="Next photo"><span aria-hidden="true">›</span></button>
+        <div class="gallery-bar">
+          <p class="gal-count">1 / 17</p>
+          <button class="gal-pause" type="button" aria-pressed="true" aria-label="Pause slideshow">Pause</button>
         </div>
       </div>
+      <div class="swiper gallery-thumbs" aria-label="Photograph thumbnails">
+        <div class="swiper-wrapper"></div>
+      </div>
+      <p class="gallery-live visually-hidden" aria-live="polite"></p>
+      <p class="gallery-status wrap" role="status" hidden></p>
+      <noscript>
+        <ul class="gallery-fallback">
+          <li><img src="images/opt/black-female-akc-wide-800.jpg" width="800" height="600" alt="A black and white puppy on a blue bed, beside a small stuffed lion."></li>
+          <li><img src="images/opt/zoey-shih-tzu-puppy-1-800.jpg" width="800" height="600" alt="A black and white puppy on a blue blanket, a plush toy at one side."></li>
+          <li><img src="images/opt/zoey-shih-tzu-puppy-800.jpg" width="800" height="600" alt="A black and white puppy on a pale bed, with a toy nearby."></li>
+          <li><img src="images/opt/black-female-akc-800.jpg" width="800" height="1066" alt="A black puppy with a white chest, resting on a pink bed."></li>
+          <li><img src="images/opt/tri-color-female-akc-limited-800.jpg" width="800" height="600" alt="A black, white, and tan puppy on a patterned quilt."></li>
+          <li><img src="images/opt/tri-color-female-akc-limited-1-800.jpg" width="800" height="600" alt="A black, white, and tan puppy up close on a patterned quilt."></li>
+          <li><img src="images/opt/shih-tzu-puppies-for-sale-768.jpg" width="768" height="1024" alt="A gold and white puppy in a round gray bed."></li>
+          <li><img src="images/opt/spring-time-shih-tzu-puppy-800.jpg" width="800" height="600" alt="A gold and white puppy in the grass, with pink flowers behind."></li>
+          <li><img src="images/jasmine-male-shih-tzu.jpg" width="384" height="512" alt="A gold and white puppy on a rose-colored blanket."></li>
+          <li><img src="images/opt/adorable-shih-tzu-puppies-800.jpg" width="800" height="600" alt="A gold and white puppy on a soft pink blanket."></li>
+          <li><img src="images/black-male-akc.jpg" width="300" height="225" alt="A small black puppy in a basket lined with pink."></li>
+          <li><img src="images/opt/white-and-apricot-shih-tzu-puppy-800.jpg" width="800" height="600" alt="A white and apricot puppy with a pink bow, in a pink basket."></li>
+          <li><img src="images/opt/puppies-basket-litter-800.jpg" width="800" height="600" alt="Three black puppies peeking over a wicker basket rim, with lavender behind."></li>
+          <li><img src="images/opt/puppies-basket-closeup-800.jpg" width="800" height="600" alt="Two black Shih Tzu puppies close up in a wicker basket on a cream blanket."></li>
+          <li><img src="images/new-puppy-with-plush.jpg" width="365" height="365" alt="A black Shih Tzu puppy on a white blanket next to a brown stuffed animal, by a window."></li>
+          <li><img src="images/opt/new-puppy-in-wagon-800.jpg" width="800" height="800" alt="A Shih Tzu puppy in a red wagon on a pink fluffy blanket."></li>
+          <li><img src="images/opt/new-puppy-by-flowers-800.jpg" width="800" height="600" alt="A black puppy on mulch by pink flowers."></li>
+        </ul>
+      </noscript>
     </section>
     <section class="section" id="videos">
       <div class="wrap">
@@ -365,18 +267,6 @@
       </div>
     </section>
   </main>
-  <dialog id="viewer" aria-label="Photo">
-    <div class="viewer-bar">
-      <p class="viewer-count" aria-live="polite"></p>
-      <form method="dialog"><button type="submit">Close</button></form>
-    </div>
-    <div class="viewer-stage">
-      <button class="viewer-nav viewer-prev" type="button">Previous</button>
-      <img alt="" width="800" height="600">
-      <button class="viewer-nav viewer-next" type="button">Next</button>
-    </div>
-    <p id="viewer-caption"></p>
-  </dialog>
   <footer class="site-footer">
     <div class="foil"></div>
     <div class="wrap">
@@ -411,6 +301,8 @@
       </div>
     </div>
   </footer>
+  <script src="vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="js/gallery.js"></script>
   <script src="js/nav.js"></script>
   <script src="js/announce.js"></script>
   <script src="js/site.js"></script>
