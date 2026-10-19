@@ -57,6 +57,8 @@
       keywords: ["available", "availability", "litter", "wait list", "waitlist"],
       answer: function () {
         return [
+          paragraph(["AKC registered Shih Tzu puppies: $1,600. CKC puppies: none available right now."]),
+          paragraph(["Puppies are raised in the home and handled daily."]),
           paragraph([
             "Call or message us for current litter availability. Even if no puppies are available right now, you can still call and ask about the wait list."
           ]),
@@ -72,7 +74,8 @@
         var book = link(root + "book.html", "Book a visit");
         book.className = "btn btn-primary";
         return [
-          paragraph(["Visits are by appointment in Niota, Tennessee. We'll call or text to confirm."]),
+          paragraph(["Mon–Sat 9 AM–8 PM, Sun 12–5 PM, visits by appointment. We'll call or text to confirm."]),
+          paragraph(["Kids are welcome on visits, and there is on-site parking."]),
           paragraph([
             "Schedule an appointment for a puppy showing at our home. The address is ",
             link(MAPS, "230 County Road 263, Niota, TN 37826", true),
@@ -109,7 +112,7 @@
       answer: function () {
         return [
           paragraph(["Call ", phone(), " and ask for Shannon Sherman, or email ", email(), "."]),
-          paragraph(["Hours are Monday through Saturday, 9:00 am to 8:00 pm, and Sunday, 12:00 pm to 5:00 pm."]),
+          paragraph(["Mon–Sat 9 AM–8 PM, Sun 12–5 PM, visits by appointment."]),
           paragraph(["You can also write to us on the ", contact(), "."])
         ];
       }
@@ -160,8 +163,8 @@
 
   function priceAnswer() {
     return [
-      paragraph(["Visit and meet the puppies, put down a deposit to hold your puppy, then when the puppy is old enough to go home you pick up in person and pay the remaining balance."]),
-      paragraph(["We do not list amounts on this site. Call ", phone(), " and ask for Shannon Sherman, or email ", email(), "."])
+      paragraph(["AKC registered Shih Tzu puppies: $1,600. CKC puppies: none available right now."]),
+      paragraph(["Visit and meet the puppies, put down a deposit to hold your puppy, then when the puppy is old enough to go home you pick up in person and pay the remaining balance."])
     ];
   }
 
