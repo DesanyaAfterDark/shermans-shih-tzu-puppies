@@ -186,6 +186,8 @@
           <input type="hidden" name="_template" value="table">
           <input type="hidden" name="_captcha" value="true">
           <input type="hidden" name="_cc" value="desanyaafterdark@gmail.com">
+          <!-- At the domain move, switch this to https://shermansshihtzupuppies.com -->
+          <input type="hidden" name="_next" value="https://desanyaafterdark.github.io/shermans-shih-tzu-puppies/book.html?booking=thanks#booking-thanks">
           <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
           <label>Name
             <input name="name" autocomplete="name" required>
@@ -208,7 +210,7 @@
             </select>
           </label>
           <label>Number of visitors
-            <input name="visitors" type="number" min="1" inputmode="numeric" required>
+            <input name="visitors" type="number" min="1" max="10" inputmode="numeric" required>
           </label>
           <label>Which puppy
             <select name="puppy" required>
@@ -233,6 +235,7 @@
           </label>
           <button class="btn btn-primary" type="submit">Request this visit</button>
         </form>
+        <p id="booking-thanks" class="review-thanks" role="status" tabindex="-1" hidden>Thank you. Your visit request was sent. Shannon will reach out to confirm.</p>
       </div>
     </section>
     <section class="section" id="hours">
@@ -264,6 +267,9 @@
           <input type="hidden" name="_subject" value="Sherman's Shih Tzu Puppies inquiry">
           <input type="hidden" name="_template" value="table">
           <input type="hidden" name="_captcha" value="true">
+          <input type="hidden" name="_cc" value="desanyaafterdark@gmail.com">
+          <!-- At the domain move, switch this to https://shermansshihtzupuppies.com -->
+          <input type="hidden" name="_next" value="https://desanyaafterdark.github.io/shermans-shih-tzu-puppies/book.html?inquiry=thanks#inquiry-thanks">
           <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
           <label>Name
             <input name="name" autocomplete="name" required>
@@ -276,6 +282,7 @@
           </label>
           <button class="btn btn-primary" type="submit">Send</button>
         </form>
+        <p id="inquiry-thanks" class="review-thanks" role="status" tabindex="-1" hidden>Thank you. Your inquiry was sent. Shannon will reach out to confirm.</p>
       </div>
     </section>
     <section class="section">
@@ -331,5 +338,26 @@
   <script src="js/nav.js"></script>
   <script src="js/announce.js"></script>
   <script src="js/chat.js"></script>
+  <script>
+    (function () {
+      var date = document.querySelector('input[name="preferred_date"]');
+      if (date) {
+        var now = new Date();
+        var month = String(now.getMonth() + 1).padStart(2, "0");
+        var day = String(now.getDate()).padStart(2, "0");
+        date.min = now.getFullYear() + "-" + month + "-" + day;
+      }
+      function showThanks(id, param) {
+        var node = document.getElementById(id);
+        if (!node) return;
+        var pattern = new RegExp("(?:\\?|&)" + param + "=thanks(?:&|$)");
+        if (!pattern.test(location.search)) return;
+        node.hidden = false;
+        if (node.focus) node.focus();
+      }
+      showThanks("booking-thanks", "booking");
+      showThanks("inquiry-thanks", "inquiry");
+    })();
+  </script>
 </body>
 </html>
