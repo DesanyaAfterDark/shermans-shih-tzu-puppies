@@ -1,0 +1,138 @@
+[
+  {
+    "src": "images/opt/black-female-akc-wide-800.jpg",
+    "thumb": "images/opt/black-female-akc-wide-480.jpg",
+    "alt": "A black and white puppy on a blue bed, beside a small stuffed lion.",
+    "category": "puppies",
+    "w": 800,
+    "h": 600
+  },
+  {
+    "src": "images/opt/zoey-shih-tzu-puppy-1-800.jpg",
+    "thumb": "images/opt/zoey-shih-tzu-puppy-1-480.jpg",
+    "alt": "A black and white puppy on a blue blanket, a plush toy at one side.",
+    "category": "puppies",
+    "w": 800,
+    "h": 600
+  },
+  {
+    "src": "images/opt/zoey-shih-tzu-puppy-800.jpg",
+    "thumb": "images/opt/zoey-shih-tzu-puppy-480.jpg",
+    "alt": "A black and white puppy on a pale bed, with a toy nearby.",
+    "category": "puppies",
+    "w": 800,
+    "h": 600
+  },
+  {
+    "src": "images/opt/black-female-akc-800.jpg",
+    "thumb": "images/opt/black-female-akc-480.jpg",
+    "alt": "A black puppy with a white chest, resting on a pink bed.",
+    "category": "puppies",
+    "w": 800,
+    "h": 1066
+  },
+  {
+    "src": "images/opt/tri-color-female-akc-limited-800.jpg",
+    "thumb": "images/opt/tri-color-female-akc-limited-480.jpg",
+    "alt": "A black, white, and tan puppy on a patterned quilt.",
+    "category": "puppies",
+    "w": 800,
+    "h": 600
+  },
+  {
+    "src": "images/opt/tri-color-female-akc-limited-1-800.jpg",
+    "thumb": "images/opt/tri-color-female-akc-limited-1-480.jpg",
+    "alt": "A black, white, and tan puppy up close on a patterned quilt.",
+    "category": "puppies",
+    "w": 800,
+    "h": 600
+  },
+  {
+    "src": "images/opt/shih-tzu-puppies-for-sale-768.jpg",
+    "thumb": "images/opt/shih-tzu-puppies-for-sale-480.jpg",
+    "alt": "A gold and white puppy in a round gray bed.",
+    "category": "puppies",
+    "w": 768,
+    "h": 1024
+  },
+  {
+    "src": "images/opt/spring-time-shih-tzu-puppy-800.jpg",
+    "thumb": "images/opt/spring-time-shih-tzu-puppy-480.jpg",
+    "alt": "A gold and white puppy in the grass, with pink flowers behind.",
+    "category": "puppies",
+    "w": 800,
+    "h": 600
+  },
+  {
+    "src": "images/jasmine-male-shih-tzu.jpg",
+    "thumb": "images/jasmine-male-shih-tzu.jpg",
+    "alt": "A gold and white puppy on a rose-colored blanket.",
+    "category": "puppies",
+    "w": 384,
+    "h": 512
+  },
+  {
+    "src": "images/opt/adorable-shih-tzu-puppies-800.jpg",
+    "thumb": "images/opt/adorable-shih-tzu-puppies-480.jpg",
+    "alt": "A gold and white puppy on a soft pink blanket.",
+    "category": "puppies",
+    "w": 800,
+    "h": 600
+  },
+  {
+    "src": "images/black-male-akc.jpg",
+    "thumb": "images/black-male-akc.jpg",
+    "alt": "A small black puppy in a basket lined with pink.",
+    "category": "puppies",
+    "w": 300,
+    "h": 225
+  },
+  {
+    "src": "images/opt/white-and-apricot-shih-tzu-puppy-800.jpg",
+    "thumb": "images/opt/white-and-apricot-shih-tzu-puppy-480.jpg",
+    "alt": "A white and apricot puppy with a pink bow, in a pink basket.",
+    "category": "puppies",
+    "w": 800,
+    "h": 600
+  },
+  {
+    "src": "images/opt/puppies-basket-litter-800.jpg",
+    "thumb": "images/opt/puppies-basket-litter-480.jpg",
+    "alt": "Three black puppies peeking over a wicker basket rim, with lavender behind.",
+    "category": "puppies",
+    "w": 800,
+    "h": 600
+  },
+  {
+    "src": "images/opt/puppies-basket-closeup-800.jpg",
+    "thumb": "images/opt/puppies-basket-closeup-480.jpg",
+    "alt": "Two black Shih Tzu puppies close up in a wicker basket on a cream blanket.",
+    "category": "puppies",
+    "w": 800,
+    "h": 600
+  },
+  {
+    "src": "images/new-puppy-with-plush.jpg",
+    "thumb": "images/new-puppy-with-plush.jpg",
+    "alt": "A black Shih Tzu puppy on a white blanket next to a brown stuffed animal, by a window.",
+    "category": "puppies",
+    "w": 365,
+    "h": 365
+  },
+  {
+    "src": "images/opt/new-puppy-in-wagon-800.jpg",
+    "thumb": "images/opt/new-puppy-in-wagon-480.jpg",
+    "alt": "A Shih Tzu puppy in a red wagon on a pink fluffy blanket.",
+    "category": "puppies",
+    "w": 800,
+    "h": 800
+  },
+  {
+    "src": "images/opt/new-puppy-by-flowers-800.jpg",
+    "thumb": "images/opt/new-puppy-by-flowers-480.jpg",
+    "alt": "A black puppy on mulch by pink flowers.",
+    "category": "puppies",
+    "w": 800,
+    "h": 600
+  }
+]
