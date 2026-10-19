@@ -1,6 +1,12 @@
 {
   "topics": [
     {
+      "id": "puppy-care",
+      "name": "Puppy Care",
+      "serviceHref": "../book.html",
+      "serviceLabel": "Book a visit"
+    },
+    {
       "id": "shih-tzu-basics",
       "name": "Shih Tzu Basics",
       "serviceHref": "../book.html",
@@ -8,6 +14,27 @@
     }
   ],
   "posts": [
+    {
+      "draft": false,
+      "title": "Shih Tzu Puppy Care 101: Feeding, Sleep, Potty Training and Play in the First Months",
+      "slug": "shih-tzu-puppy-care-101",
+      "topic": "puppy-care",
+      "date": "2026-10-19",
+      "excerpt": "Your Shih Tzu puppy is home. Now what? Here's a practical, puppy-sized guide to meals, naps, potty breaks, teething and playtime in the first months.",
+      "tags": [
+        "Shih Tzu puppy",
+        "puppy care",
+        "puppy feeding schedule",
+        "potty training",
+        "puppy sleep",
+        "puppy teething",
+        "puppy socialization",
+        "toy breed puppy"
+      ],
+      "image": "",
+      "imageWebp": "",
+      "imageAlt": ""
+    },
     {
       "draft": false,
       "title": "Is a Shih Tzu Right for Your Family? What to Know Before Bringing One Home",
