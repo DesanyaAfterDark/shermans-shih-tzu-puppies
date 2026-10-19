@@ -1,6 +1,12 @@
 {
   "topics": [
     {
+      "id": "finding-your-puppy",
+      "name": "Finding Your Puppy",
+      "serviceHref": "../book.html",
+      "serviceLabel": "Book a visit"
+    },
+    {
       "id": "puppy-care",
       "name": "Puppy Care",
       "serviceHref": "../book.html",
@@ -14,6 +20,63 @@
     }
   ],
   "posts": [
+    {
+      "draft": false,
+      "title": "How Much Does a Shih Tzu Puppy Cost? A Fair Price, and Red Flags to Avoid",
+      "slug": "how-much-does-a-shih-tzu-puppy-cost",
+      "topic": "finding-your-puppy",
+      "date": "2026-10-20",
+      "excerpt": "A very cheap Shih Tzu listing can cost you more in the end. Here's what a fair price looks like and what puppy-scam warnings say.",
+      "tags": [
+        "Shih Tzu price",
+        "Shih Tzu for sale",
+        "puppy scams",
+        "AKC Shih Tzu",
+        "Shih Tzu breeder",
+        "buying a puppy"
+      ],
+      "image": "images/opt/adorable-shih-tzu-puppies-1400.jpg",
+      "imageWebp": "images/opt/adorable-shih-tzu-puppies-1400.webp",
+      "imageAlt": "A gold and white puppy on a soft pink blanket."
+    },
+    {
+      "draft": false,
+      "title": "Imperial and Teacup Shih Tzus, Explained Honestly",
+      "slug": "imperial-and-teacup-shih-tzu-explained",
+      "topic": "shih-tzu-basics",
+      "date": "2026-10-20",
+      "excerpt": "\"Imperial\" and \"teacup\" Shih Tzu aren't separate breeds or official sizes. Here's what the breed standard says and why size matters for health.",
+      "tags": [
+        "imperial Shih Tzu",
+        "teacup Shih Tzu",
+        "Shih Tzu size",
+        "Shih Tzu breed standard",
+        "Shih Tzu health",
+        "toy breed puppy"
+      ],
+      "image": "images/opt/black-female-akc-wide-800.jpg",
+      "imageWebp": "images/opt/black-female-akc-wide-800.webp",
+      "imageAlt": "A black and white puppy on a blue bed, beside a small stuffed lion."
+    },
+    {
+      "draft": false,
+      "title": "Shih Tzu Puppies for Sale Near Knoxville, Chattanooga and Athens, TN",
+      "slug": "shih-tzu-puppies-for-sale-near-knoxville-chattanooga-athens-tn",
+      "topic": "finding-your-puppy",
+      "date": "2026-10-20",
+      "excerpt": "Families from Knoxville, Chattanooga and Athens visit our home in Niota to meet their Shih Tzu puppy in person. Here's what a visit is like.",
+      "tags": [
+        "Shih Tzu puppies for sale",
+        "Shih Tzu Knoxville TN",
+        "Shih Tzu breeder Tennessee",
+        "Niota TN",
+        "puppy visit",
+        "pickup only"
+      ],
+      "image": "images/opt/spring-time-shih-tzu-puppy-800.jpg",
+      "imageWebp": "images/opt/spring-time-shih-tzu-puppy-800.webp",
+      "imageAlt": "A gold and white puppy in the grass, with pink flowers behind."
+    },
     {
       "draft": false,
       "title": "Shih Tzu Puppy Care 101: Feeding, Sleep, Potty Training and Play in the First Months",
