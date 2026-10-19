@@ -1,6 +1,12 @@
 {
   "topics": [
     {
+      "id": "puppy-care",
+      "name": "Puppy Care",
+      "serviceHref": "../book.html",
+      "serviceLabel": "Book a visit"
+    },
+    {
       "id": "shih-tzu-basics",
       "name": "Shih Tzu Basics",
       "serviceHref": "../book.html",
@@ -8,6 +14,28 @@
     }
   ],
   "posts": [
+    {
+      "draft": false,
+      "title": "How to Choose a Healthy Shih Tzu Puppy: Questions to Ask a Breeder",
+      "slug": "how-to-choose-a-healthy-shih-tzu-puppy",
+      "topic": "puppy-care",
+      "date": "2026-10-19",
+      "excerpt": "A healthy Shih Tzu puppy starts with the right breeder. Here's what a healthy puppy looks like, which records and questions matter, the red flags to avoid, and what to bring on pickup day.",
+      "tags": [
+        "Shih Tzu puppy",
+        "healthy puppy",
+        "choosing a puppy",
+        "questions to ask a breeder",
+        "Shih Tzu breeder",
+        "puppy health records",
+        "puppy vaccinations",
+        "puppy scams",
+        "pickup day"
+      ],
+      "image": "",
+      "imageWebp": "",
+      "imageAlt": ""
+    },
     {
       "draft": false,
       "title": "Is a Shih Tzu Right for Your Family? What to Know Before Bringing One Home",
