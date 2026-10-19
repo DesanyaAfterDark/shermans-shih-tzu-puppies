@@ -546,6 +546,13 @@ h3, .card h2 { margin: 0 0 0.35rem; font-size: 1.55rem; line-height: 1.25; }
   background: var(--cream);
   border: 1px solid #d9bc78;
 }
+.photo-grid .shot.shot-small {
+  width: min(365px, 100%);
+}
+.photo-grid .shot.shot-small img {
+  width: 100%;
+  max-width: 365px;
+}
 .tile { margin: 0; }
 .shot span, .tile figcaption {
   display: block;
