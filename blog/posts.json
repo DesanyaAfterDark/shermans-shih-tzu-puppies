@@ -1,0 +1,33 @@
+{
+  "topics": [
+    {
+      "id": "shih-tzu-basics",
+      "name": "Shih Tzu Basics",
+      "serviceHref": "../book.html",
+      "serviceLabel": "Book a visit"
+    }
+  ],
+  "posts": [
+    {
+      "draft": false,
+      "title": "Is a Shih Tzu Right for Your Family? What to Know Before Bringing One Home",
+      "slug": "is-a-shih-tzu-right-for-your-family",
+      "topic": "shih-tzu-basics",
+      "date": "2026-10-17",
+      "excerpt": "Shih Tzu are affectionate little companions, but they need daily care and a family that understands their needs. Here's an honest look at what to know before you bring one home.",
+      "tags": [
+        "Shih Tzu",
+        "Shih Tzu temperament",
+        "Shih Tzu grooming",
+        "Shih Tzu health",
+        "Shih Tzu puppy",
+        "family dogs",
+        "new puppy tips",
+        "brachycephalic breeds"
+      ],
+      "image": "",
+      "imageWebp": "",
+      "imageAlt": ""
+    }
+  ]
+}
