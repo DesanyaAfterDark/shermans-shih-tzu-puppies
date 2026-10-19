@@ -215,7 +215,7 @@ svg.flip { transform: scaleX(-1); }
   margin-top: 1.2rem;
 }
 .nav-dialog .header-tools .btn { grid-column: auto; grid-row: auto; width: 100%; }
-#puppies, #story, #letter, #films, #visit, #next, #videos, #hours, #inquiries, #reviews, #family-reviews, #leave-review, #review-thanks { scroll-margin-top: 12rem; }
+#puppies, #story, #letter, #films, #visit, #next, #videos, #hours, #inquiries, #reviews, #family-reviews, #leave-review, #review-thanks, #booking-thanks, #inquiry-thanks { scroll-margin-top: 12rem; }
 .header-rule { height: 1px; margin: 0; border: 0; background: var(--foil); }
 
 .hero { position: relative; overflow: hidden; padding: 1.5rem 0 2.5rem; }
@@ -717,7 +717,7 @@ input, textarea, select {
     gap: 0.55rem;
   }
   .header-tools .btn { grid-column: auto; grid-row: auto; width: auto; }
-  #puppies, #story, #letter, #films, #visit, #next, #videos, #hours, #inquiries, #reviews, #family-reviews, #leave-review, #review-thanks { scroll-margin-top: 13rem; }
+  #puppies, #story, #letter, #films, #visit, #next, #videos, #hours, #inquiries, #reviews, #family-reviews, #leave-review, #review-thanks, #booking-thanks, #inquiry-thanks { scroll-margin-top: 13rem; }
   .hero { padding: 2.2rem 0 3rem; }
   .hero-grid { grid-template-columns: 1.1fr 0.95fr; min-height: 36rem; }
   .hero-watermark { left: 0; top: 0.4rem; opacity: 0.55; }
