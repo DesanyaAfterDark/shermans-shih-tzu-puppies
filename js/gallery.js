@@ -28,11 +28,14 @@
   }
 
   function renderMain(photo) {
-    return (
-      '<div class="swiper-slide">' +
-      '<img src="' + esc(photo.src) + '" alt="' + esc(photo.alt) + '" width="' + Number(photo.w) + '" height="' + Number(photo.h) + '" decoding="async">' +
-      "</div>"
-    );
+    var sizes = '(min-width: 900px) min(90rem, 100vw), 100vw';
+    var img = '<img src="' + esc(photo.src) + '" alt="' + esc(photo.alt) + '" width="' + Number(photo.w) + '" height="' + Number(photo.h) + '" decoding="async"';
+    if (photo.srcset) img += ' srcset="' + esc(photo.srcset) + '" sizes="' + sizes + '"';
+    img += ">";
+    if (photo.webp) {
+      img = '<picture><source type="image/webp" srcset="' + esc(photo.webp) + '"' + (photo.srcset ? ' sizes="' + sizes + '"' : "") + ">" + img + "</picture>";
+    }
+    return '<div class="swiper-slide">' + img + "</div>";
   }
 
   function renderThumb(photo) {
