@@ -985,6 +985,7 @@ input, textarea, select {
   .post-cta { flex-direction: column; align-items: stretch; }
   .post-cta .btn { width: 100%; }
 }
+#finding-your-puppy,
 #puppy-care,
 #shih-tzu-basics { scroll-margin-top: 12rem; }
 @media (min-width: 720px) {
