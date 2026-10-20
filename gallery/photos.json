@@ -1,11 +1,383 @@
 [
   {
-    "src": "images/opt/black-female-akc-wide-800.jpg",
-    "thumb": "images/opt/black-female-akc-wide-480.jpg",
-    "alt": "A black and white puppy on a blue bed, beside a small stuffed lion.",
+    "src": "images/opt/picks/ssp-0017-full.jpg",
+    "srcset": "images/opt/picks/ssp-0017-800.jpg 800w, images/opt/picks/ssp-0017-full.jpg 1440w",
+    "webp": "images/opt/picks/ssp-0017-800.webp 800w, images/opt/picks/ssp-0017-full.webp 1440w",
+    "thumb": "images/opt/picks/ssp-0017-800.jpg",
+    "alt": "A sable puppy posed with white flowers on cream blanket.",
     "category": "puppies",
-    "w": 800,
-    "h": 600
+    "w": 1440,
+    "h": 1079
+  },
+  {
+    "src": "images/opt/picks/ssp-0660-1600.jpg",
+    "srcset": "images/opt/picks/ssp-0660-800.jpg 600w, images/opt/picks/ssp-0660-1600.jpg 1200w",
+    "webp": "images/opt/picks/ssp-0660-800.webp 600w, images/opt/picks/ssp-0660-1600.webp 1200w",
+    "thumb": "images/opt/picks/ssp-0660-800.jpg",
+    "alt": "A gold sable puppy on stone by orange flowers.",
+    "category": "puppies",
+    "w": 1200,
+    "h": 1600
+  },
+  {
+    "src": "images/opt/picks/ssp-0623-1600.jpg",
+    "srcset": "images/opt/picks/ssp-0623-800.jpg 600w, images/opt/picks/ssp-0623-1600.jpg 1200w",
+    "webp": "images/opt/picks/ssp-0623-800.webp 600w, images/opt/picks/ssp-0623-1600.webp 1200w",
+    "thumb": "images/opt/picks/ssp-0623-800.jpg",
+    "alt": "A gold puppy on gray fuzzy blanket looking at camera.",
+    "category": "puppies",
+    "w": 1200,
+    "h": 1600
+  },
+  {
+    "src": "images/opt/picks/ssp-0812-1600.jpg",
+    "srcset": "images/opt/picks/ssp-0812-800.jpg 800w, images/opt/picks/ssp-0812-1600.jpg 1600w",
+    "webp": "images/opt/picks/ssp-0812-800.webp 800w, images/opt/picks/ssp-0812-1600.webp 1600w",
+    "thumb": "images/opt/picks/ssp-0812-800.jpg",
+    "alt": "A sable puppy on teal blanket in sunlight.",
+    "category": "puppies",
+    "w": 1600,
+    "h": 1200
+  },
+  {
+    "src": "images/opt/picks/ssp-0845-1600.jpg",
+    "srcset": "images/opt/picks/ssp-0845-800.jpg 800w, images/opt/picks/ssp-0845-1600.jpg 1600w",
+    "webp": "images/opt/picks/ssp-0845-800.webp 800w, images/opt/picks/ssp-0845-1600.webp 1600w",
+    "thumb": "images/opt/picks/ssp-0845-800.jpg",
+    "alt": "A fluffy gold puppy on outdoor mesh chair.",
+    "category": "puppies",
+    "w": 1600,
+    "h": 1200
+  },
+  {
+    "src": "images/opt/picks/ssp-0604-1600.jpg",
+    "srcset": "images/opt/picks/ssp-0604-800.jpg 600w, images/opt/picks/ssp-0604-1600.jpg 1200w",
+    "webp": "images/opt/picks/ssp-0604-800.webp 600w, images/opt/picks/ssp-0604-1600.webp 1200w",
+    "thumb": "images/opt/picks/ssp-0604-800.jpg",
+    "alt": "A silver sable puppy on red blanket looking at camera.",
+    "category": "puppies",
+    "w": 1200,
+    "h": 1600
+  },
+  {
+    "src": "images/opt/picks/ssp-0799-1600.jpg",
+    "srcset": "images/opt/picks/ssp-0799-800.jpg 685w, images/opt/picks/ssp-0799-1600.jpg 1370w",
+    "webp": "images/opt/picks/ssp-0799-800.webp 685w, images/opt/picks/ssp-0799-1600.webp 1370w",
+    "thumb": "images/opt/picks/ssp-0799-800.jpg",
+    "alt": "A cream and white puppy on patterned armchair.",
+    "category": "puppies",
+    "w": 1370,
+    "h": 1600
+  },
+  {
+    "src": "images/opt/picks/ssp-0686-1600.jpg",
+    "srcset": "images/opt/picks/ssp-0686-800.jpg 800w, images/opt/picks/ssp-0686-1600.jpg 1600w",
+    "webp": "images/opt/picks/ssp-0686-800.webp 800w, images/opt/picks/ssp-0686-1600.webp 1600w",
+    "thumb": "images/opt/picks/ssp-0686-800.jpg",
+    "alt": "A black and white puppy on table.",
+    "category": "puppies",
+    "w": 1600,
+    "h": 1200
+  },
+  {
+    "src": "images/opt/picks/ssp-0023-1600.jpg",
+    "srcset": "images/opt/picks/ssp-0023-800.jpg 800w, images/opt/picks/ssp-0023-1600.jpg 1600w",
+    "webp": "images/opt/picks/ssp-0023-800.webp 800w, images/opt/picks/ssp-0023-1600.webp 1600w",
+    "thumb": "images/opt/picks/ssp-0023-800.jpg",
+    "alt": "A black puppy looking at camera on blue blanket.",
+    "category": "puppies",
+    "w": 1600,
+    "h": 1200
+  },
+  {
+    "src": "images/opt/picks/ssp-0006-1600.jpg",
+    "srcset": "images/opt/picks/ssp-0006-800.jpg 640w, images/opt/picks/ssp-0006-1600.jpg 1280w",
+    "webp": "images/opt/picks/ssp-0006-800.webp 640w, images/opt/picks/ssp-0006-1600.webp 1280w",
+    "thumb": "images/opt/picks/ssp-0006-800.jpg",
+    "alt": "A gold sable puppy lying on a stone step outdoors.",
+    "category": "puppies",
+    "w": 1280,
+    "h": 1600
+  },
+  {
+    "src": "images/opt/picks/ssp-0051-full.jpg",
+    "srcset": "images/opt/picks/ssp-0051-800.jpg 640w, images/opt/picks/ssp-0051-full.jpg 1080w",
+    "webp": "images/opt/picks/ssp-0051-800.webp 640w, images/opt/picks/ssp-0051-full.webp 1080w",
+    "thumb": "images/opt/picks/ssp-0051-800.jpg",
+    "alt": "A black puppy with white paws standing on blue minky blanket.",
+    "category": "puppies",
+    "w": 1080,
+    "h": 1351
+  },
+  {
+    "src": "images/opt/picks/ssp-0105-full.jpg",
+    "srcset": "images/opt/picks/ssp-0105-800.jpg 800w, images/opt/picks/ssp-0105-full.jpg 1440w",
+    "webp": "images/opt/picks/ssp-0105-800.webp 800w, images/opt/picks/ssp-0105-full.webp 1440w",
+    "thumb": "images/opt/picks/ssp-0105-800.jpg",
+    "alt": "A sable puppy on patterned pillow looking at camera.",
+    "category": "puppies",
+    "w": 1440,
+    "h": 1080
+  },
+  {
+    "src": "images/opt/picks/ssp-0107-full.jpg",
+    "srcset": "images/opt/picks/ssp-0107-800.jpg 800w, images/opt/picks/ssp-0107-full.jpg 1440w",
+    "webp": "images/opt/picks/ssp-0107-800.webp 800w, images/opt/picks/ssp-0107-full.webp 1440w",
+    "thumb": "images/opt/picks/ssp-0107-800.jpg",
+    "alt": "A red sable puppy sitting on gray bed.",
+    "category": "puppies",
+    "w": 1440,
+    "h": 1079
+  },
+  {
+    "src": "images/opt/picks/ssp-0314-1600.jpg",
+    "srcset": "images/opt/picks/ssp-0314-800.jpg 800w, images/opt/picks/ssp-0314-1600.jpg 1600w",
+    "webp": "images/opt/picks/ssp-0314-800.webp 800w, images/opt/picks/ssp-0314-1600.webp 1600w",
+    "thumb": "images/opt/picks/ssp-0314-800.jpg",
+    "alt": "A sable puppy on blue print blanket looking at camera.",
+    "category": "puppies",
+    "w": 1600,
+    "h": 1200
+  },
+  {
+    "src": "images/opt/picks/ssp-0417-1600.jpg",
+    "srcset": "images/opt/picks/ssp-0417-800.jpg 800w, images/opt/picks/ssp-0417-1600.jpg 1600w",
+    "webp": "images/opt/picks/ssp-0417-800.webp 800w, images/opt/picks/ssp-0417-1600.webp 1600w",
+    "thumb": "images/opt/picks/ssp-0417-800.jpg",
+    "alt": "A sable/tri puppy on blue rag rug looking at camera.",
+    "category": "puppies",
+    "w": 1600,
+    "h": 1200
+  },
+  {
+    "src": "images/opt/picks/ssp-0427-1600.jpg",
+    "srcset": "images/opt/picks/ssp-0427-800.jpg 800w, images/opt/picks/ssp-0427-1600.jpg 1600w",
+    "webp": "images/opt/picks/ssp-0427-800.webp 800w, images/opt/picks/ssp-0427-1600.webp 1600w",
+    "thumb": "images/opt/picks/ssp-0427-800.jpg",
+    "alt": "A red sable puppy sitting on blue blanket.",
+    "category": "puppies",
+    "w": 1600,
+    "h": 1200
+  },
+  {
+    "src": "images/opt/picks/ssp-0630-1600.jpg",
+    "srcset": "images/opt/picks/ssp-0630-800.jpg 800w, images/opt/picks/ssp-0630-1600.jpg 1600w",
+    "webp": "images/opt/picks/ssp-0630-800.webp 800w, images/opt/picks/ssp-0630-1600.webp 1600w",
+    "thumb": "images/opt/picks/ssp-0630-800.jpg",
+    "alt": "A gold sable puppy face on red blanket.",
+    "category": "puppies",
+    "w": 1600,
+    "h": 1067
+  },
+  {
+    "src": "images/opt/picks/ssp-0766-1600.jpg",
+    "srcset": "images/opt/picks/ssp-0766-800.jpg 800w, images/opt/picks/ssp-0766-1600.jpg 1600w",
+    "webp": "images/opt/picks/ssp-0766-800.webp 800w, images/opt/picks/ssp-0766-1600.webp 1600w",
+    "thumb": "images/opt/picks/ssp-0766-800.jpg",
+    "alt": "A black puppy on pastel blanket looking at camera.",
+    "category": "puppies",
+    "w": 1600,
+    "h": 1200
+  },
+  {
+    "src": "images/opt/picks/ssp-0767-1600.jpg",
+    "srcset": "images/opt/picks/ssp-0767-800.jpg 800w, images/opt/picks/ssp-0767-1600.jpg 1600w",
+    "webp": "images/opt/picks/ssp-0767-800.webp 800w, images/opt/picks/ssp-0767-1600.webp 1600w",
+    "thumb": "images/opt/picks/ssp-0767-800.jpg",
+    "alt": "A black and silver puppy among green plants.",
+    "category": "puppies",
+    "w": 1600,
+    "h": 1200
+  },
+  {
+    "src": "images/opt/picks/ssp-0774-1600.jpg",
+    "srcset": "images/opt/picks/ssp-0774-800.jpg 600w, images/opt/picks/ssp-0774-1600.jpg 1200w",
+    "webp": "images/opt/picks/ssp-0774-800.webp 600w, images/opt/picks/ssp-0774-1600.webp 1200w",
+    "thumb": "images/opt/picks/ssp-0774-800.jpg",
+    "alt": "A black and white puppy in hanging coco basket.",
+    "category": "puppies",
+    "w": 1200,
+    "h": 1600
+  },
+  {
+    "src": "images/opt/picks/ssp-0775-1600.jpg",
+    "srcset": "images/opt/picks/ssp-0775-800.jpg 600w, images/opt/picks/ssp-0775-1600.jpg 1200w",
+    "webp": "images/opt/picks/ssp-0775-800.webp 600w, images/opt/picks/ssp-0775-1600.webp 1200w",
+    "thumb": "images/opt/picks/ssp-0775-800.jpg",
+    "alt": "A black puppy by yellow flowers outdoors.",
+    "category": "puppies",
+    "w": 1200,
+    "h": 1600
+  },
+  {
+    "src": "images/opt/picks/ssp-0803-1600.jpg",
+    "srcset": "images/opt/picks/ssp-0803-800.jpg 800w, images/opt/picks/ssp-0803-1600.jpg 1600w",
+    "webp": "images/opt/picks/ssp-0803-800.webp 800w, images/opt/picks/ssp-0803-1600.webp 1600w",
+    "thumb": "images/opt/picks/ssp-0803-800.jpg",
+    "alt": "A chocolate puppy sitting on sherpa blanket.",
+    "category": "puppies",
+    "w": 1600,
+    "h": 1200
+  },
+  {
+    "src": "images/opt/picks/ssp-0809-1600.jpg",
+    "srcset": "images/opt/picks/ssp-0809-800.jpg 800w, images/opt/picks/ssp-0809-1600.jpg 1600w",
+    "webp": "images/opt/picks/ssp-0809-800.webp 800w, images/opt/picks/ssp-0809-1600.webp 1600w",
+    "thumb": "images/opt/picks/ssp-0809-800.jpg",
+    "alt": "A black and silver puppy on stone by leaves.",
+    "category": "puppies",
+    "w": 1600,
+    "h": 1200
+  },
+  {
+    "src": "images/opt/picks/ssp-0819-full.jpg",
+    "srcset": "images/opt/picks/ssp-0819-800.jpg 800w, images/opt/picks/ssp-0819-full.jpg 1437w",
+    "webp": "images/opt/picks/ssp-0819-800.webp 800w, images/opt/picks/ssp-0819-full.webp 1437w",
+    "thumb": "images/opt/picks/ssp-0819-800.jpg",
+    "alt": "A black and silver puppy held by yellow flowers.",
+    "category": "puppies",
+    "w": 1437,
+    "h": 1080
+  },
+  {
+    "src": "images/opt/picks/ssp-0822-1600.jpg",
+    "srcset": "images/opt/picks/ssp-0822-800.jpg 800w, images/opt/picks/ssp-0822-1600.jpg 1600w",
+    "webp": "images/opt/picks/ssp-0822-800.webp 800w, images/opt/picks/ssp-0822-1600.webp 1600w",
+    "thumb": "images/opt/picks/ssp-0822-800.jpg",
+    "alt": "A fluffy gold sable puppy by wood fence.",
+    "category": "puppies",
+    "w": 1600,
+    "h": 1200
+  },
+  {
+    "src": "images/opt/picks/ssp-0856-1600.jpg",
+    "srcset": "images/opt/picks/ssp-0856-800.jpg 800w, images/opt/picks/ssp-0856-1600.jpg 1600w",
+    "webp": "images/opt/picks/ssp-0856-800.webp 800w, images/opt/picks/ssp-0856-1600.webp 1600w",
+    "thumb": "images/opt/picks/ssp-0856-800.jpg",
+    "alt": "A black puppy with white feet sitting on dark cushion.",
+    "category": "puppies",
+    "w": 1600,
+    "h": 1200
+  },
+  {
+    "src": "images/opt/picks/ssp-0866-1600.jpg",
+    "srcset": "images/opt/picks/ssp-0866-800.jpg 600w, images/opt/picks/ssp-0866-1600.jpg 1200w",
+    "webp": "images/opt/picks/ssp-0866-800.webp 600w, images/opt/picks/ssp-0866-1600.webp 1200w",
+    "thumb": "images/opt/picks/ssp-0866-800.jpg",
+    "alt": "A black and white puppy on purple cushion.",
+    "category": "puppies",
+    "w": 1200,
+    "h": 1600
+  },
+  {
+    "src": "images/opt/picks/ssp-0873-1600.jpg",
+    "srcset": "images/opt/picks/ssp-0873-800.jpg 600w, images/opt/picks/ssp-0873-1600.jpg 1200w",
+    "webp": "images/opt/picks/ssp-0873-800.webp 600w, images/opt/picks/ssp-0873-1600.webp 1200w",
+    "thumb": "images/opt/picks/ssp-0873-800.jpg",
+    "alt": "A chocolate puppy on print blanket.",
+    "category": "puppies",
+    "w": 1200,
+    "h": 1600
+  },
+  {
+    "src": "images/opt/picks/ssp-0875-1600.jpg",
+    "srcset": "images/opt/picks/ssp-0875-800.jpg 600w, images/opt/picks/ssp-0875-1600.jpg 1200w",
+    "webp": "images/opt/picks/ssp-0875-800.webp 600w, images/opt/picks/ssp-0875-1600.webp 1200w",
+    "thumb": "images/opt/picks/ssp-0875-800.jpg",
+    "alt": "A black puppy with white chest on patterned cushion.",
+    "category": "puppies",
+    "w": 1200,
+    "h": 1600
+  },
+  {
+    "src": "images/opt/picks/ssp-0881-1600.jpg",
+    "srcset": "images/opt/picks/ssp-0881-800.jpg 800w, images/opt/picks/ssp-0881-1600.jpg 1600w",
+    "webp": "images/opt/picks/ssp-0881-800.webp 800w, images/opt/picks/ssp-0881-1600.webp 1600w",
+    "thumb": "images/opt/picks/ssp-0881-800.jpg",
+    "alt": "A gold puppy on patterned cushion.",
+    "category": "puppies",
+    "w": 1600,
+    "h": 1200
+  },
+  {
+    "src": "images/opt/picks/ssp-0438-1600.jpg",
+    "srcset": "images/opt/picks/ssp-0438-800.jpg 800w, images/opt/picks/ssp-0438-1600.jpg 1600w",
+    "webp": "images/opt/picks/ssp-0438-800.webp 800w, images/opt/picks/ssp-0438-1600.webp 1600w",
+    "thumb": "images/opt/picks/ssp-0438-800.jpg",
+    "alt": "A sable puppy with red bandana on wood table.",
+    "category": "puppies",
+    "w": 1600,
+    "h": 1200
+  },
+  {
+    "src": "images/opt/picks/ssp-0474-1600.jpg",
+    "srcset": "images/opt/picks/ssp-0474-800.jpg 800w, images/opt/picks/ssp-0474-1600.jpg 1600w",
+    "webp": "images/opt/picks/ssp-0474-800.webp 800w, images/opt/picks/ssp-0474-1600.webp 1600w",
+    "thumb": "images/opt/picks/ssp-0474-800.jpg",
+    "alt": "A silver sable puppy on wood table.",
+    "category": "puppies",
+    "w": 1600,
+    "h": 1200
+  },
+  {
+    "src": "images/opt/picks/ssp-0534-1600.jpg",
+    "srcset": "images/opt/picks/ssp-0534-800.jpg 600w, images/opt/picks/ssp-0534-1600.jpg 1200w",
+    "webp": "images/opt/picks/ssp-0534-800.webp 600w, images/opt/picks/ssp-0534-1600.webp 1200w",
+    "thumb": "images/opt/picks/ssp-0534-800.jpg",
+    "alt": "A chocolate puppy with white paw on red blanket.",
+    "category": "puppies",
+    "w": 1200,
+    "h": 1600
+  },
+  {
+    "src": "images/opt/picks/ssp-0699-1600.jpg",
+    "srcset": "images/opt/picks/ssp-0699-800.jpg 800w, images/opt/picks/ssp-0699-1600.jpg 1600w",
+    "webp": "images/opt/picks/ssp-0699-800.webp 800w, images/opt/picks/ssp-0699-1600.webp 1600w",
+    "thumb": "images/opt/picks/ssp-0699-800.jpg",
+    "alt": "A black and white puppy on white fur.",
+    "category": "puppies",
+    "w": 1600,
+    "h": 1200
+  },
+  {
+    "src": "images/opt/picks/ssp-0072-full.jpg",
+    "srcset": "images/opt/picks/ssp-0072-800.jpg 800w, images/opt/picks/ssp-0072-full.jpg 1440w",
+    "webp": "images/opt/picks/ssp-0072-800.webp 800w, images/opt/picks/ssp-0072-full.webp 1440w",
+    "thumb": "images/opt/picks/ssp-0072-800.jpg",
+    "alt": "A black puppy with white flowers on blue blanket.",
+    "category": "puppies",
+    "w": 1440,
+    "h": 1080
+  },
+  {
+    "src": "images/opt/picks/ssp-0411-1600.jpg",
+    "srcset": "images/opt/picks/ssp-0411-800.jpg 600w, images/opt/picks/ssp-0411-1600.jpg 1200w",
+    "webp": "images/opt/picks/ssp-0411-800.webp 600w, images/opt/picks/ssp-0411-1600.webp 1200w",
+    "thumb": "images/opt/picks/ssp-0411-800.jpg",
+    "alt": "A black puppy on stone wall with greenery.",
+    "category": "puppies",
+    "w": 1200,
+    "h": 1600
+  },
+  {
+    "src": "images/opt/picks/ssp-0453-1600.jpg",
+    "srcset": "images/opt/picks/ssp-0453-800.jpg 600w, images/opt/picks/ssp-0453-1600.jpg 1200w",
+    "webp": "images/opt/picks/ssp-0453-800.webp 600w, images/opt/picks/ssp-0453-1600.webp 1200w",
+    "thumb": "images/opt/picks/ssp-0453-800.jpg",
+    "alt": "A black puppy with bow by yellow flowers outdoors.",
+    "category": "puppies",
+    "w": 1200,
+    "h": 1600
+  },
+  {
+    "src": "images/opt/picks/ssp-0789-1600.jpg",
+    "srcset": "images/opt/picks/ssp-0789-800.jpg 800w, images/opt/picks/ssp-0789-1600.jpg 1600w",
+    "webp": "images/opt/picks/ssp-0789-800.webp 800w, images/opt/picks/ssp-0789-1600.webp 1600w",
+    "thumb": "images/opt/picks/ssp-0789-800.jpg",
+    "alt": "A black puppy by lavender flowers.",
+    "category": "puppies",
+    "w": 1600,
+    "h": 1200
   },
   {
     "src": "images/opt/zoey-shih-tzu-puppy-1-800.jpg",

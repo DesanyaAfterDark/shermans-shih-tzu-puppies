@@ -5,19 +5,38 @@
     if (thanks.focus) thanks.focus();
   }
 
+  var videoBox = document.querySelector("#video-box");
   document.querySelectorAll(".video-play").forEach(function (button) {
     button.addEventListener("click", function () {
       var src = button.getAttribute("data-src");
       if (!src) return;
+      var title = button.getAttribute("data-title") || "Sherman's Shih Tzu Puppies video";
       var iframe = document.createElement("iframe");
       iframe.src = src + (src.indexOf("?") === -1 ? "?" : "&") + "autoplay=1";
-      iframe.title = button.getAttribute("data-title") || "Sherman's Shih Tzu Puppies video";
+      iframe.title = title;
       iframe.allow = "autoplay; fullscreen; picture-in-picture";
       iframe.allowFullscreen = true;
       iframe.setAttribute("allowfullscreen", "");
+      if (videoBox && videoBox.showModal) {
+        var frame = videoBox.querySelector(".video-box-frame");
+        var label = videoBox.querySelector("#video-box-title");
+        if (frame) frame.replaceChildren(iframe);
+        if (label) label.textContent = title;
+        videoBox.showModal();
+        return;
+      }
       button.replaceWith(iframe);
     });
   });
+  if (videoBox) {
+    function stopVideo() {
+      var frame = videoBox.querySelector(".video-box-frame");
+      if (frame) frame.replaceChildren();
+    }
+    videoBox.addEventListener("close", stopVideo);
+    var videoForm = videoBox.querySelector("form");
+    if (videoForm) videoForm.addEventListener("submit", stopVideo);
+  }
 
   var dialog = document.querySelector("#viewer");
   var shots = Array.prototype.slice.call(document.querySelectorAll(".shot"));
