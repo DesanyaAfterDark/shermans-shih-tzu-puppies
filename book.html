@@ -165,52 +165,68 @@
   </header>
   <hr class="header-rule">
   <main id="main">
-    <section class="section">
+    <section class="section" id="booking">
       <div class="wrap-narrow">
         <p class="eyebrow">Puppy appointments</p>
         <h1>Book a visit</h1>
         <div class="ornament" aria-hidden="true"><svg class="rose" width="30" height="30"><use href="#rose"/></svg></div>
-        <p class="lede">Schedule an appointment for a puppy showing.</p>
-        <p>Visits are by appointment in Niota, Tennessee. We'll call or text to confirm.</p>
-        <p>Prefer a video visit? Call or text <a href="tel:+14239203750">423-920-3750</a> to set up a FaceTime visit.</p>
-        <p>Call <a href="tel:+14239203750">423-920-3750</a> and ask for Shannon Sherman, or send the note below.</p>
+        <p class="lede">Schedule an appointment for a puppy showing in Niota, Tennessee. We'll call or text to confirm.</p>
+        <div class="actions">
+          <a class="btn btn-phone" href="tel:+14239203750">Call 423-920-3750</a>
+        </div>
+        <p>Ask for Shannon Sherman. Prefer a video visit? Call or text <a href="tel:+14239203750">423-920-3750</a> to set up a FaceTime visit.</p>
+        <h2>Before you visit</h2>
+        <p>Puppies are AKC and CKC registered, DNA tested, and come with a health guarantee. They are raised in the home and handled daily.</p>
         <p>AKC registered Shih Tzu puppies: $1,600. CKC puppies: none available right now.</p>
-        <p>Puppies are raised in the home and handled daily.</p>
-        <p>Visit and meet the puppies, put down a deposit to hold your puppy, then when the puppy is old enough to go home you pick up in person and pay the remaining balance.</p>
         <p>Kids are welcome on visits, and there is on-site parking.</p>
-        <p class="fine">Pickup is in person in Niota.</p>
-        <form class="inquiry" action="https://formsubmit.co/desanyaafterdark@gmail.com" method="post">
+        <h2>Deposit and pickup</h2>
+        <ol class="steps">
+          <li>Visit and meet the puppies.</li>
+          <li>Shannon takes a deposit to hold your puppy.</li>
+          <li>When the puppy is old enough to go home, you pick up in person. Final payment is due at pickup.</li>
+        </ol>
+        <p class="fine">Pickup is in person in Niota. We do not ship.</p>
+        <h2 id="request-heading">Request this visit</h2>
+        <p>Send the note below, or call <a href="tel:+14239203750">423-920-3750</a>.</p>
+        <form class="inquiry" action="https://formsubmit.co/desanyaafterdark@gmail.com" method="post" aria-labelledby="request-heading">
           <input type="hidden" name="_subject" value="Visit request — Sherman's Shih Tzu Puppies">
           <input type="hidden" name="_template" value="table">
           <input type="hidden" name="_captcha" value="true">
           <input type="hidden" name="_cc" value="greenpea@live.com">
           <input type="hidden" name="_next" value="https://shermansshihtzupuppies.com/book.html?booking=thanks#booking-thanks">
-          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
-          <label>Name
-            <input name="name" autocomplete="name" required>
-          </label>
-          <label>Phone
-            <input name="phone" type="tel" autocomplete="tel" required>
-          </label>
-          <label>Email
-            <input name="email" type="email" autocomplete="email" required>
-          </label>
-          <label>Preferred date
-            <input name="preferred_date" type="date" required>
-          </label>
-          <label>Preferred time
-            <select name="preferred_time" required>
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <div class="field">
+            <label for="visit-name">Name</label>
+            <input id="visit-name" name="name" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="visit-phone">Phone</label>
+            <input id="visit-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required>
+          </div>
+          <div class="field">
+            <label for="visit-email">Email</label>
+            <input id="visit-email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="field">
+            <label for="visit-date">Preferred date</label>
+            <input id="visit-date" name="preferred_date" type="date" required>
+          </div>
+          <div class="field">
+            <label for="visit-time">Preferred time</label>
+            <select id="visit-time" name="preferred_time" required>
               <option value="" selected disabled>Choose a time of day</option>
               <option>Morning</option>
               <option>Afternoon</option>
               <option>Evening</option>
             </select>
-          </label>
-          <label>Number of visitors
-            <input name="visitors" type="number" min="1" max="10" inputmode="numeric" required>
-          </label>
-          <label>Which puppy
-            <select name="puppy" required>
+          </div>
+          <div class="field">
+            <label for="visit-visitors">Number of visitors</label>
+            <input id="visit-visitors" name="visitors" type="number" min="1" max="10" inputmode="numeric" required>
+          </div>
+          <div class="field">
+            <label for="visit-puppy">Which puppy</label>
+            <select id="visit-puppy" name="puppy" required>
               <option value="" selected disabled>Choose a puppy</option>
               <option>Not sure</option>
               <option>Black and white puppy on a blue bed</option>
@@ -226,10 +242,11 @@
               <option>Small black puppy in a pink basket</option>
               <option>White and apricot puppy with a pink bow</option>
             </select>
-          </label>
-          <label>Message
-            <textarea name="message" rows="5"></textarea>
-          </label>
+          </div>
+          <div class="field">
+            <label for="visit-message">Message <span class="optional">(optional)</span></label>
+            <textarea id="visit-message" name="message" rows="5"></textarea>
+          </div>
           <button class="btn btn-primary" type="submit">Request this visit</button>
         </form>
         <p id="booking-thanks" class="review-thanks" role="status" tabindex="-1" hidden>Thank you. Your visit request was sent. Shannon will reach out to confirm.</p>
@@ -240,7 +257,7 @@
         <h2>Hours and address</h2>
         <p class="lede">We are in East Tennessee, near Athens, within a drive of Knoxville and Chattanooga. Families are welcome from anywhere in the United States.</p>
         <p class="fine">We do not ship. Pickup is in person in Niota, TN.</p>
-        <div class="cards">
+        <div class="cards cards-two">
           <article class="card">
             <h3>Phone</h3>
             <p><a href="tel:+14239203750">423-920-3750</a><br>Ask for Shannon Sherman.</p>
@@ -258,24 +275,27 @@
     </section>
     <section class="section" id="inquiries">
       <div class="wrap-narrow">
-        <h2>Litter inquiries</h2>
-        <p>Be the first to hear about new litters, availability, and helpful pet advice. Subscribe to get news on litters and shows by saying so in the message.</p>
-        <form class="inquiry" action="https://formsubmit.co/desanyaafterdark@gmail.com" method="post">
+        <h2 id="inquiry-heading">Litter inquiries</h2>
+        <p>Ask about new litters, availability, and shows. Say so in the message.</p>
+        <form class="inquiry" action="https://formsubmit.co/desanyaafterdark@gmail.com" method="post" aria-labelledby="inquiry-heading">
           <input type="hidden" name="_subject" value="Sherman's Shih Tzu Puppies inquiry">
           <input type="hidden" name="_template" value="table">
           <input type="hidden" name="_captcha" value="true">
           <input type="hidden" name="_cc" value="greenpea@live.com">
           <input type="hidden" name="_next" value="https://shermansshihtzupuppies.com/book.html?inquiry=thanks#inquiry-thanks">
-          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
-          <label>Name
-            <input name="name" autocomplete="name" required>
-          </label>
-          <label>Email
-            <input name="email" type="email" autocomplete="email" required>
-          </label>
-          <label>Message
-            <textarea name="message" rows="5"></textarea>
-          </label>
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <div class="field">
+            <label for="inquiry-name">Name</label>
+            <input id="inquiry-name" name="name" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="inquiry-email">Email</label>
+            <input id="inquiry-email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="field">
+            <label for="inquiry-message">Message <span class="optional">(optional)</span></label>
+            <textarea id="inquiry-message" name="message" rows="5"></textarea>
+          </div>
           <button class="btn btn-primary" type="submit">Send</button>
         </form>
         <p id="inquiry-thanks" class="review-thanks" role="status" tabindex="-1" hidden>Thank you. Your inquiry was sent. Shannon will reach out to confirm.</p>
@@ -284,15 +304,15 @@
     <section class="section">
       <div class="wrap-narrow faq">
         <h2>Frequently asked questions</h2>
-        <p>Please contact us if you cannot find an answer to your question.</p>
+        <p>Please contact us if you cannot find an answer to your question. Call <a href="tel:+14239203750">423-920-3750</a>.</p>
         <p>AKC registered Shih Tzu puppies: $1,600. CKC puppies: none available right now.</p>
         <details>
           <summary>Do you allow deposits?</summary>
-          <p>Visit and meet the puppies, put down a deposit to hold your puppy, then when the puppy is old enough to go home you pick up in person and pay the remaining balance.</p>
+          <p>Yes. Visit and meet the puppies, then Shannon takes a deposit to hold your puppy. When the puppy is old enough to go home, you pick up in person. Final payment is due at pickup.</p>
         </details>
         <details>
           <summary>Is there a health guarantee?</summary>
-          <p>Yes, and we will go over your health guarantee in person at puppy pickup.</p>
+          <p>Yes. Puppies are AKC and CKC registered and DNA tested, and each one comes with a health guarantee. We will go over your health guarantee in person at puppy pickup.</p>
         </details>
       </div>
     </section>
