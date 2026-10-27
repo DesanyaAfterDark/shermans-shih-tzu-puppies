@@ -339,7 +339,6 @@ h3, .card h2 { margin: 0 0 0.35rem; font-size: 1.55rem; line-height: 1.25; }
 
 .section { padding: 2.6rem 0; }
 .band { background: var(--cream); }
-.band .card,
 .band .review { background: var(--ivory); }
 .center { text-align: center; }
 .closing {
@@ -1128,4 +1127,63 @@ form.inquiry .optional {
   color: var(--gold-ink);
   font: 600 0.95rem/1.3 var(--label);
   letter-spacing: 0.08em;
+}
+
+/* ---- 2026 bento modular refresh: same palette and logo; rounded tiles on cream ---- */
+:root { --radius: 1.75rem; --tile-shadow: 0 1px 2px rgba(62, 34, 48, 0.08); }
+body { background: var(--cream); }
+.site-header, .banner { background-color: transparent; }
+.header-rule { display: none; }
+h1 { letter-spacing: -0.02em; }
+@media (min-width: 64em) { h1 { font-size: clamp(3rem, 5vw, 4.6rem); line-height: 1.02; } }
+h2 { letter-spacing: -0.01em; }
+.nav-pages a, .nav-dialog nav a { border-radius: 999px; background: var(--ivory); padding: 0.45rem 1rem; text-decoration: none; }
+.nav-pages a[aria-current="page"] { background: var(--plum); color: var(--ivory); }
+.btn, button.btn, form button { border-radius: 999px; transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease; }
+.btn-primary, form button { background: var(--rose); color: #fff; border-color: var(--rose); }
+.btn-primary:hover, form button:hover { background: var(--plum); color: var(--ivory); transform: translateY(-1px); }
+.btn-phone { background: var(--plum); color: var(--ivory); border-color: var(--plum); }
+.btn-phone:hover { background: #2b1722; color: var(--ivory); transform: translateY(-1px); }
+.btn .icon { width: 1em; height: 1em; margin-right: 0.45em; vertical-align: -0.12em; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+/* every section becomes a tile */
+.section, .band { background: transparent; padding: 0.5rem 0; }
+.section > .wrap, .section > .wrap-narrow {
+  background: var(--ivory); border-radius: var(--radius); box-shadow: var(--tile-shadow);
+  padding: clamp(1.5rem, 4vw, 2.75rem);
+}
+.section.band > .wrap, .section.band > .wrap-narrow { background: var(--ivory); }
+main { padding-bottom: 1rem; }
+.section > .wrap, .section > .wrap-narrow, .hero > .wrap { width: min(var(--max), calc(100% - 1.5rem)); }
+@media (min-width: 48em) { .section > .wrap, .section > .wrap-narrow, .hero > .wrap { width: min(var(--max), calc(100% - 6vw)); } }
+/* hero: copy tile + photo tile */
+.hero { padding: 0.5rem 0; }
+.hero-watermark { display: none; }
+.hero-grid { gap: 1rem; align-items: stretch; }
+.hero-copy { background: var(--ivory); border-radius: var(--radius); padding: clamp(1.5rem, 4vw, 2.75rem); box-shadow: var(--tile-shadow); }
+.hero .arch { width: 100%; background: var(--ivory); border-radius: var(--radius); overflow: hidden; padding: 0; }
+.hero .arch-mat { border-radius: 0; border: 0; padding: 0; height: 100%; background: none; }
+.hero .arch-mat img, .hero .arch-mat picture { border-radius: 0; height: 100%; width: 100%; object-fit: cover; }
+.hero .rose-pair, .hero .plaque { display: none; }
+/* cards as coloured tiles */
+.cards { gap: 1rem; }
+.card { border-radius: var(--radius); background: var(--cream); border: 0; box-shadow: none; padding: 1.75rem; transition: transform 0.25s ease; }
+.cards .card:nth-child(4n+1), .cards .card.rating { background: var(--plum); color: var(--ivory); }
+.cards .card:nth-child(4n+1) h2, .cards .card:nth-child(4n+1) h3 { color: #e9d29a; }
+.cards .card.rating p, .cards .card.rating a { color: var(--ivory); }
+.cards .card:nth-child(4n+1) p, .cards .card:nth-child(4n+1) li { color: var(--ivory); }
+.cards .card:nth-child(4n+1) a { color: #e9d29a; }
+.cards .card:nth-child(4n+3) { background: var(--blush); }
+.cards .card:hover { transform: scale(1.01); }
+.card.rating .big { font: 400 3.5rem/1 var(--display); margin: 0 0 0.5rem; color: var(--ivory); }
+@media (min-width: 60em) { #story .cards { grid-template-columns: repeat(4, 1fr); } }
+.review, .faq details, form.inquiry, .note { border-radius: 1.25rem; }
+.review { background: var(--cream); }
+.faq details { background: var(--cream); padding: 0.4rem 1rem; margin: 0.5rem 0; border: 0; }
+form input, form select, form textarea { border-radius: 0.75rem; }
+.gallery img, .pup-slide img, .video-grid video { border-radius: 1.25rem; }
+.steps li { margin: 0.35rem 0; }
+.site-footer { margin-top: 0.5rem; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .btn, .card, form button { transition: none !important; transform: none !important; }
 }
