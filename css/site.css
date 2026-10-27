@@ -1191,3 +1191,17 @@ form input, form select, form textarea { border-radius: 0.75rem; }
 .fine.fine-sentence { text-transform: none; font-variant: normal; letter-spacing: 0.02em; }
 .tile-how { max-width: 40rem; margin: 2rem auto 0; padding: 1.5rem 1.75rem; background: var(--ivory, #fffaf3); border-radius: 1.5rem; }
 .tile-how h3 { margin-top: 0; }
+
+/* ---- Polish 2, Oct 27 ---- */
+.banner { color: var(--gold-ink); }
+.cards .card:nth-child(4n+3) a, .tile-how a { color: var(--plum); }
+.tile-how { max-width: none; margin: 1.25rem 0 0; background: var(--blush); border-radius: var(--radius); padding: 1.75rem; }
+.tile-how ul { margin: 0.5rem 0; padding-left: 1.2rem; }
+.wrap-narrow .cards + h2, .cards + h2 { margin-top: 2.25rem; }
+.contact-cta { margin-top: 1.5rem; }
+.nav-pages a, .header-tools .btn { white-space: nowrap; }
+.nowrap { white-space: nowrap; }
+.pup-slide picture { aspect-ratio: 4 / 3; min-height: 0; }
+.pup-slide img { max-height: 100%; }
+.pup-dots { gap: 0.3rem; }
+.pup-dot { min-width: 34px; min-height: 34px; }

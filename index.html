@@ -186,7 +186,7 @@
             <picture>
               <source type="image/avif" srcset="images/opt/adorable-shih-tzu-puppies-480.avif 480w, images/opt/adorable-shih-tzu-puppies-800.avif 800w, images/opt/adorable-shih-tzu-puppies-1400.avif 1400w" sizes="(min-width: 960px) 470px, 88vw">
               <source type="image/webp" srcset="images/opt/adorable-shih-tzu-puppies-480.webp 480w, images/opt/adorable-shih-tzu-puppies-800.webp 800w, images/opt/adorable-shih-tzu-puppies-1400.webp 1400w" sizes="(min-width: 960px) 470px, 88vw">
-              <img src="images/opt/adorable-shih-tzu-puppies-800.webp" srcset="images/opt/adorable-shih-tzu-puppies-480.webp 480w, images/opt/adorable-shih-tzu-puppies-800.webp 800w, images/opt/adorable-shih-tzu-puppies-1400.webp 1400w" sizes="(min-width: 960px) 470px, 88vw" width="1600" height="1200" alt="A gold and white puppy on a soft pink blanket." fetchpriority="high">
+              <img fetchpriority="high" src="images/opt/adorable-shih-tzu-puppies-800.webp" srcset="images/opt/adorable-shih-tzu-puppies-480.webp 480w, images/opt/adorable-shih-tzu-puppies-800.webp 800w, images/opt/adorable-shih-tzu-puppies-1400.webp 1400w" sizes="(min-width: 960px) 470px, 88vw" width="1600" height="1200" alt="A gold and white puppy on a soft pink blanket." fetchpriority="high">
             </picture>
           </div>
           <div class="rose-pair" aria-hidden="true">
@@ -354,13 +354,11 @@
     <section class="section band" id="visit">
       <div class="wrap">
         <p class="eyebrow center">Come see us</p>
-        <h2 class="center">Visits and the wait list</h2>
+        <h2 class="center">Visits and the waitlist</h2>
         <div class="ornament" aria-hidden="true"><svg class="rose" width="30" height="30"><use href="#rose"/></svg></div>
         <p class="center">We are in East Tennessee, near Athens, within a drive of Knoxville and Chattanooga. Families are welcome from anywhere in the United States. We would be delighted to welcome you. Visit us at <a href="https://www.google.com/maps/search/?api=1&amp;query=230+County+Road+263,+Niota,+TN+37826" target="_blank" rel="noopener noreferrer">230 County Road 263, Niota, TN 37826</a>.</p>
-        <p class="center">Prefer a video visit? Call or text <a href="tel:+14239203750">423-920-3750</a> to set up a FaceTime visit.</p>
         <p class="center">Kids are welcome on visits, and there is on-site parking.</p>
         <p class="center">Mon–Sat 9 AM–8 PM, Sun 12–5 PM, visits by appointment.</p>
-        <p class="center">Visit and meet the puppies, put down a deposit to hold your puppy, then when the puppy is old enough to go home you pick up in person and pay the remaining balance.</p>
         <p class="fine center">We do not ship. Pickup is in Niota, TN.</p>
         <div class="cards">
           <article class="card">
@@ -372,8 +370,8 @@
             <p>Visit and meet the puppies, put down a deposit to hold your puppy, then when the puppy is old enough to go home you pick up in person and pay the remaining balance. The health guarantee is gone over in person at puppy pickup.</p>
           </article>
           <article class="card">
-            <h3>Wait list</h3>
-            <p>When we don't have puppies available, we keep a wait list. Call <a href="tel:+14239203750">423-920-3750</a> to join it, and we'll let you know when the next litter is ready to visit.</p>
+            <h3>Waitlist</h3>
+            <p>When we don't have puppies available, we keep a waitlist. Call <a href="tel:+14239203750">423-920-3750</a> to join it, and we'll let you know when the next litter is ready to visit.</p>
           </article>
         </div>
         <article class="card tile-how">
@@ -408,7 +406,8 @@
         </div>
       </div>
     </section>
-    <section class="section band" id="family-reviews">
+    <!-- Hidden until approved reviews are added; remove the hidden attribute to show. -->
+    <section class="section band" id="family-reviews" hidden>
       <div class="wrap-narrow">
         <p class="eyebrow center">From this site</p>
         <h2 class="center">What families say</h2>
