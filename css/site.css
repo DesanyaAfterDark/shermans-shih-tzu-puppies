@@ -1095,3 +1095,37 @@ input, textarea, select {
 @media (min-width: 720px) {
   .post-grid { grid-template-columns: 1fr 1fr; }
 }
+
+#booking h2 { margin-top: 2rem; }
+#booking .actions { margin-top: 0.4rem; }
+.steps { margin: 0.2rem 0 0.6rem; padding-left: 1.25rem; }
+.steps li { margin: 0.4rem 0; }
+form.inquiry .field { display: grid; gap: 0.3rem; }
+form.inquiry .optional {
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: none;
+  font-variant: normal;
+}
+#hours a[href^="tel:"],
+#booking a[href^="tel:"]:not(.btn),
+.faq a[href^="tel:"] {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
+@media (max-width: 719px) {
+  #booking .actions { flex-direction: column; align-items: stretch; }
+  #booking .actions .btn { width: 100%; }
+}
+@media (min-width: 720px) {
+  .cards.cards-two { grid-template-columns: 1fr 1fr; }
+}
+#from-the-blog li { margin: 0.95rem 0; }
+#from-the-blog time {
+  display: block;
+  margin-bottom: 0.12rem;
+  color: var(--gold-ink);
+  font: 600 0.95rem/1.3 var(--label);
+  letter-spacing: 0.08em;
+}
