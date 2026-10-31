@@ -766,9 +766,15 @@ input, textarea, select {
     letter-spacing: 0.06em;
   }
   .announce .sprig { width: 26px; height: 14px; }
-  .banner { letter-spacing: 0.14em; font-size: 0.95rem; }
+  .banner { letter-spacing: 0.04em; font-size: 0.8rem; line-height: 1.35; }
   .banner .sprig { display: none; }
-  .banner-text { display: flex; flex-direction: column; gap: 0.05rem; }
+  .banner-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.1rem;
+    text-align: center;
+  }
   .dot { display: none; }
   .site-footer a {
     display: inline-flex;

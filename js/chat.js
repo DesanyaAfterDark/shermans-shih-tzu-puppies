@@ -60,7 +60,7 @@
           paragraph(["AKC registered Shih Tzu puppies: $1,600. CKC puppies: none available right now."]),
           paragraph(["Puppies are raised in the home and handled daily."]),
           paragraph([
-            "Call or message us for current litter availability. Even if no puppies are available right now, you can still call and ask about the wait list."
+            "Call or message us for current litter availability. Even if no puppies are available right now, you can still call to join the waitlist."
           ]),
           paragraph(["Call ", phone(), " and ask for Shannon Sherman, email ", email(), ", or use the ", contact(), "."])
         ];
@@ -118,6 +118,14 @@
       }
     },
     {
+      id: "price",
+      label: "Price",
+      keywords: ["price", "prices", "cost", "how much", "deposit", "fee", "payment"],
+      answer: function () {
+        return priceAnswer();
+      }
+    },
+    {
       id: "directions",
       label: "Directions",
       keywords: ["direction", "directions", "map", "address", "where", "knoxville", "chattanooga", "athens"],
@@ -164,7 +172,7 @@
   function priceAnswer() {
     return [
       paragraph(["AKC registered Shih Tzu puppies: $1,600. CKC puppies: none available right now."]),
-      paragraph(["Visit and meet the puppies, put down a deposit to hold your puppy, then when the puppy is old enough to go home you pick up in person and pay the remaining balance."])
+      paragraph(["Visit and meet the puppies, put down a $600 non-refundable deposit to hold your puppy, then when the puppy is old enough to go home you pick up in person and pay the remaining balance."])
     ];
   }
 
@@ -305,7 +313,9 @@
       }
     }
 
-    topics.forEach(function (topic) {
+    topics.slice().sort(function (a, b) {
+      return a.label.localeCompare(b.label, "en", { sensitivity: "base" });
+    }).forEach(function (topic) {
       topicsBox.appendChild(el("button", {
         type: "button",
         className: "help-topic"
